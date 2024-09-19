@@ -13,6 +13,46 @@ icon:github-square[link=https://github.com/2324-4bhif-wmc/2324-4bhif-wmc-lecture
 icon:home[link=http://edufs.edu.htl-leonding.ac.at/~t.stuetz/hugo/2021/01/lecture-notes/]
 endif::backend-html5[]
 
+== 2024-09-12
+
+image::application-server-vs-web-server.png[]
+
+
+
 == 2024-09-19
+
+=== Persistenz
+
+* Wenn Daten den Prozess, der sie erzeugt, überleben, dann spricht man von persistenzten Daten.
++
+Beispiele:
+
+** Dateien, die serialisiert wurden
+** Datenbanken
+** ...
+
+
+=== Was ist Serialisierung?
+
+* In einem (Java-)Programm sind die Instanzen die Repräsentationen von Klassen
+
+** Beispiel: Die Klasse ´Person´ hat die Instanzen: Karl, Susi, Herbert
+
+** In den Instanzen (Objekten) sind den Feldern der Klasse Werte zugeordnet.
+
+* Diese Instanzen können nun zur Laufzeit als Files gespeichert werden
+
+* Voraussetzung: Interface Serializable
+
+* Mit der statischen Konstante ´serialVersionUID´ wird die Version der Klasse bestimmt. Es können nur gespeicherte Objekte eingelesen werden, deren serialVersionUID mit der der aktuellen Klasse übereinstimmt.
+
+image::3-layer-architecture.png[]
+
+
+
+
+
+
+
 
 
