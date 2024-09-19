@@ -457,7 +457,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_2024_09_19">1. 2024-09-19</a></li>
+<li><a href="#_2024_09_12">1. 2024-09-12</a></li>
+<li><a href="#_2024_09_19">2. 2024-09-19</a>
+<ul class="sectlevel2">
+<li><a href="#_persistenz">2.1. Persistenz</a></li>
+<li><a href="#_was_ist_serialisierung">2.2. Was ist Serialisierung?</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -472,16 +478,85 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2024_09_19"><a class="anchor" href="#_2024_09_19"></a>1. 2024-09-19</h2>
+<h2 id="_2024_09_12"><a class="anchor" href="#_2024_09_12"></a>1. 2024-09-12</h2>
 <div class="sectionbody">
-
+<div class="imageblock">
+<div class="content">
+<img src="images/application-server-vs-web-server.png" alt="application server vs web server">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2024_09_19"><a class="anchor" href="#_2024_09_19"></a>2. 2024-09-19</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_persistenz"><a class="anchor" href="#_persistenz"></a>2.1. Persistenz</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Wenn Daten den Prozess, der sie erzeugt, überleben, dann spricht man von persistenzten Daten.</p>
+<div class="paragraph">
+<p>Beispiele:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Dateien, die serialisiert wurden</p>
+</li>
+<li>
+<p>Datenbanken</p>
+</li>
+<li>
+<p>&#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_was_ist_serialisierung"><a class="anchor" href="#_was_ist_serialisierung"></a>2.2. Was ist Serialisierung?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>In einem (Java-)Programm sind die Instanzen die Repräsentationen von Klassen</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Beispiel: Die Klasse ´Person´ hat die Instanzen: Karl, Susi, Herbert</p>
+</li>
+<li>
+<p>In den Instanzen (Objekten) sind den Feldern der Klasse Werte zugeordnet.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Diese Instanzen können nun zur Laufzeit als Files gespeichert werden</p>
+</li>
+<li>
+<p>Voraussetzung: Interface Serializable</p>
+</li>
+<li>
+<p>Mit der statischen Konstante ´serialVersionUID´ wird die Version der Klasse bestimmt. Es können nur gespeicherte Objekte eingelesen werden, deren serialVersionUID mit der der aktuellen Klasse übereinstimmt.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/3-layer-architecture.png" alt="3 layer architecture">
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2024-09-19 05:15:31 UTC
+Last updated 2024-09-19 07:31:47 UTC
 </div>
 </div>
 </body>
