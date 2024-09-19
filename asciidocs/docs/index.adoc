@@ -1,4 +1,18 @@
-= Index page
+= 24/25 4bhitm sew - Lecture Notes
+Thomas Stütz
+1.0.0, {docdate}: Lecture Notes for Courses at HTL Leonding
+:icons: font
+:experimental:
+:sectnums:
 ifndef::imagesdir[:imagesdir: images]
+:toc:
+ifdef::backend-html5[]
+// https://fontawesome.com/v4.7.0/icons/
+icon:file-text-o[link=https://github.com/2324-4bhif-wmc/2324-4bhif-wmc-lecture-notes/main/asciidocs/{docname}.adoc] ‏ ‏ ‎
+icon:github-square[link=https://github.com/2324-4bhif-wmc/2324-4bhif-wmc-lecture-notes] ‏ ‏ ‎
+icon:home[link=http://edufs.edu.htl-leonding.ac.at/~t.stuetz/hugo/2021/01/lecture-notes/]
+endif::backend-html5[]
 
-image::img.png[]
+== 2024-09-19
+
+
