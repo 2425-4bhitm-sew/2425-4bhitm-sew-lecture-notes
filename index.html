@@ -436,6 +436,120 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+pre.rouge table td { padding: 5px; }
+pre.rouge table pre { margin: 0; }
+pre.rouge, pre.rouge .w {
+  color: #24292f;
+  background-color: #f6f8fa;
+}
+pre.rouge .k, pre.rouge .kd, pre.rouge .kn, pre.rouge .kp, pre.rouge .kr, pre.rouge .kt, pre.rouge .kv {
+  color: #cf222e;
+}
+pre.rouge .gr {
+  color: #f6f8fa;
+}
+pre.rouge .gd {
+  color: #82071e;
+  background-color: #ffebe9;
+}
+pre.rouge .nb {
+  color: #953800;
+}
+pre.rouge .nc {
+  color: #953800;
+}
+pre.rouge .no {
+  color: #953800;
+}
+pre.rouge .nn {
+  color: #953800;
+}
+pre.rouge .sr {
+  color: #116329;
+}
+pre.rouge .na {
+  color: #116329;
+}
+pre.rouge .nt {
+  color: #116329;
+}
+pre.rouge .gi {
+  color: #116329;
+  background-color: #dafbe1;
+}
+pre.rouge .kc {
+  color: #0550ae;
+}
+pre.rouge .l, pre.rouge .ld, pre.rouge .m, pre.rouge .mb, pre.rouge .mf, pre.rouge .mh, pre.rouge .mi, pre.rouge .il, pre.rouge .mo, pre.rouge .mx {
+  color: #0550ae;
+}
+pre.rouge .sb {
+  color: #0550ae;
+}
+pre.rouge .bp {
+  color: #0550ae;
+}
+pre.rouge .ne {
+  color: #0550ae;
+}
+pre.rouge .nl {
+  color: #0550ae;
+}
+pre.rouge .py {
+  color: #0550ae;
+}
+pre.rouge .nv, pre.rouge .vc, pre.rouge .vg, pre.rouge .vi, pre.rouge .vm {
+  color: #0550ae;
+}
+pre.rouge .o, pre.rouge .ow {
+  color: #0550ae;
+}
+pre.rouge .gh {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .gu {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .s, pre.rouge .sa, pre.rouge .sc, pre.rouge .dl, pre.rouge .sd, pre.rouge .s2, pre.rouge .se, pre.rouge .sh, pre.rouge .sx, pre.rouge .s1, pre.rouge .ss {
+  color: #0a3069;
+}
+pre.rouge .nd {
+  color: #8250df;
+}
+pre.rouge .nf, pre.rouge .fm {
+  color: #8250df;
+}
+pre.rouge .err {
+  color: #f6f8fa;
+  background-color: #82071e;
+}
+pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cm, pre.rouge .cp, pre.rouge .cpf, pre.rouge .c1, pre.rouge .cs {
+  color: #6e7781;
+}
+pre.rouge .gl {
+  color: #6e7781;
+}
+pre.rouge .gt {
+  color: #6e7781;
+}
+pre.rouge .ni {
+  color: #24292f;
+}
+pre.rouge .si {
+  color: #24292f;
+}
+pre.rouge .ge {
+  color: #24292f;
+  font-style: italic;
+}
+pre.rouge .gs {
+  color: #24292f;
+  font-weight: bold;
+}
+</style>
+<style>
     pre.rouge .hll {
         background-color: #ffc;
         display: block;
@@ -451,7 +565,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">Thomas Stütz</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2024-09-19</span>
+<span id="revdate">2024-09-26</span>
 <br><span id="revremark">Lecture Notes for Courses at HTL Leonding</span>
 </div>
 <div id="toc" class="toc2">
@@ -462,6 +576,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_persistenz">2.1. Persistenz</a></li>
 <li><a href="#_was_ist_serialisierung">2.2. Was ist Serialisierung?</a></li>
+<li><a href="#_was_ist_quarkus">2.3. Was ist Quarkus?</a></li>
+<li><a href="#_xml">2.4. XML</a></li>
+<li><a href="#_html">2.5. HTML</a></li>
+</ul>
+</li>
+<li><a href="#_2024_09_26">3. 2024-09-26</a>
+<ul class="sectlevel2">
+<li><a href="#_rest">3.1. REST</a></li>
+<li><a href="#_datenintegrität">3.2. Datenintegrität</a></li>
 </ul>
 </li>
 </ul>
@@ -550,13 +673,167 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_was_ist_quarkus"><a class="anchor" href="#_was_ist_quarkus"></a>2.3. Was ist Quarkus?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Eine Quarkus Application entspricht dem mircoprofile Standard.</p>
+</li>
+<li>
+<p>In  einer Quarkus Applikation (zB jar-File) befinden sich zusätzlich zum App-Code die JakartaEE- oder microprofile-Libraries sowie ein Web-Server, der gestartet wird, um zB mittels REST auf die Quarkus App zuzugreifen.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_xml"><a class="anchor" href="#_xml"></a>2.4. XML</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>extensible Markup Language</p>
+</li>
+<li>
+<p>extensible &#8230;&#8203; erweiterbar, dh es können beliebige Tags verwendet werden (zB <code>person</code>)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>markup language &#8230;&#8203; Auszeichnungssprache (selbstbeschreibende Sprache)</p>
+</li>
+<li>
+<p>Beispiel</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="xml"><span class="nt">&lt;person&gt;</span>
+  <span class="nt">&lt;name&gt;</span>Susi<span class="nt">&lt;/name&gt;</span>
+  <span class="nt">&lt;wohnort&gt;</span>Leonding<span class="nt">&lt;/wohnort&gt;</span>
+<span class="nt">&lt;/person&gt;</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Die Daten beschreiben sich selbst. Eine <code>person</code> hat einen <code>name</code> und einen <code>wohnort</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>XML ist eine Baumstruktur.</p>
+</li>
+<li>
+<p>Einsatzgebiete</p>
+<div class="ulist">
+<ul>
+<li>
+<p>zur Datenübertragung (zB im Web)</p>
+</li>
+<li>
+<p>als Konfigurationsdatei (zB pom.xml)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Alternativen:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>JSON</p>
+</li>
+<li>
+<p>YAML</p>
+</li>
+<li>
+<p>TOML</p>
+</li>
+<li>
+<p>&#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_html"><a class="anchor" href="#_html"></a>2.5. HTML</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>HTML ist eine Untermenge von XML. Früher waren die Tags fix definiert.</p>
+</li>
+<li>
+<p>HTML ist genauso wie XML eine Baumstruktur</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="html"><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>zzz<span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>yyy<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>xxx<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Im Browser wird diese Baumstruktur als DOM (document object model) gespeichert.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/diag-plantuml-md5-07a47fff913614ff210c4ef087ece098.png" alt="Diagram" width="304" height="246">
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/png.png" alt="png" width="120" height="100">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2024_09_26"><a class="anchor" href="#_2024_09_26"></a>3. 2024-09-26</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_rest"><a class="anchor" href="#_rest"></a>3.1. REST</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_datenintegrität"><a class="anchor" href="#_datenintegrität"></a>3.2. Datenintegrität</h3>
+<div class="imageblock">
+<div class="content">
+<img src="images/erd.png" alt="erd" width="554" height="61">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/microservices-vs-monolith.png" alt="microservices vs monolith">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>HÜ</p>
+</li>
+<li>
+<p>Im bestehenden Projekt einen POST-Request absetzen</p>
+</li>
+<li>
+<p>Der Inhalt des POST-requests wird in der Konsole ausgegeben.</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2024-09-19 07:31:47 UTC
+Last updated 2024-09-26 08:54:24 UTC
 </div>
 </div>
 </body>
