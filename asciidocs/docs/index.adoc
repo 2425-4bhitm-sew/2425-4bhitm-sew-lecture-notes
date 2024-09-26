@@ -49,10 +49,122 @@ Beispiele:
 image::3-layer-architecture.png[]
 
 
+=== Was ist Quarkus?
+
+* Eine Quarkus Application entspricht dem mircoprofile Standard.
+
+* In  einer Quarkus Applikation (zB jar-File) befinden sich zusätzlich zum App-Code die JakartaEE- oder microprofile-Libraries sowie ein Web-Server, der gestartet wird, um zB mittels REST auf die Quarkus App zuzugreifen.
+
+=== XML
+
+* extensible Markup Language
+
+* extensible ... erweiterbar, dh es können beliebige Tags verwendet werden (zB `person`)
+
+** markup language ... Auszeichnungssprache (selbstbeschreibende Sprache)
+** Beispiel
++
+[source,xml]
+----
+<person>
+  <name>Susi</name>
+  <wohnort>Leonding</wohnort>
+</person>
+----
+
+** Die Daten beschreiben sich selbst. Eine `person` hat einen `name` und einen `wohnort`.
+
+* XML ist eine Baumstruktur.
+
+* Einsatzgebiete
+** zur Datenübertragung (zB im Web)
+** als Konfigurationsdatei (zB pom.xml)
+
+* Alternativen:
+** JSON
+** YAML
+** TOML
+** ...
+
+=== HTML
+
+* HTML ist eine Untermenge von XML. Früher waren die Tags fix definiert.
+
+* HTML ist genauso wie XML eine Baumstruktur
++
+[source,html]
+----
+<html>
+  <head>zzz</head>
+  <body>
+    <h1>yyy</h1>
+    <p>xxx</p>
+  </body>
+</html>
+----
+
+* Im Browser wird diese Baumstruktur als DOM (document object model) gespeichert.
++
+[plantuml]
+----
+@startmindmap
+* document
+** html
+** head
+** body
+*** h1
+*** p
+*** p
+@endmindmap
+----
+
+[plantuml,png]
+----
+@startuml
+class Person {
+  id: Long
+ name: String
+}
+
+@enduml
+----
+
+== 2024-09-26
+
+=== REST
+
+
+=== Datenintegrität
+
+[plantuml,erd]
+----
+@startuml
+left to right direction
+
+class Kunde {
+}
+
+class Produkt {
+}
+
+class Rechnung {
+}
+
+class RechPos {
+}
+
+Kunde "1" <-- "*" Rechnung
+Rechnung "1" <-- "*" RechPos
+RechPos "*" --> "1" Produkt
+
+@enduml
+----
+
+image::microservices-vs-monolith.png[]
 
 
 
+* HÜ
 
-
-
-
+* Im bestehenden Projekt einen POST-Request absetzen
+* Der Inhalt des POST-requests wird in der Konsole ausgegeben.
