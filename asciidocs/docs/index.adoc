@@ -168,3 +168,9 @@ image::microservices-vs-monolith.png[]
 
 * Im bestehenden Projekt einen POST-Request absetzen
 * Der Inhalt des POST-requests wird in der Konsole ausgegeben.
+
+=== Annotationen
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zNVU1uCSIxc?si=aIBSTRAQSl3xTy_j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+++++
