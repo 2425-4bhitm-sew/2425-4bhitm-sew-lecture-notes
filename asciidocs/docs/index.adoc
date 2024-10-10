@@ -187,6 +187,91 @@ image::cld-erd-bsp.png[]
 
 image::objektdarstellung.png[]
 
+== 2024-10-10
+
+* Wiederholung REST-API Präsentation
+
+image::rest-server-client.png[]
+
+=== REST Assured
+
+* https://github.com/rest-assured/rest-assured/wiki/Usage
+
+=== Microprojekte
+
+|===
+|Name |Thema
+
+
+|Kreuzer Andreas
+|Büchererei
+
+|Mayr Tim
+|Friedhofsverwaltung
+
+|Brkic Ilijas
+|Restaurant (Tische reservieren)
+
+|Wizany Linus
+|Reisebüro
+
+|Stützner Michael
+|Gärtnerei
+
+|Klaffenböck Jakob
+|Tierarztpraxis
+
+|Huch Tobias
+|Eisenbahn (Fahrplan)
+
+|Mayer Samuel
+|Fluggesellschaft
+
+|Hayer Florian
+|Spedition
+
+|Michel Jakob
+|Facility-Manager (Hausmeister)
+
+|Brandstätter Elias
+|Autovermietung
+
+|Simsek Atilla
+|Hotel
+
+|Kaltenberger Elisa
+|Bank
+
+|Schönbauer Linnea
+|Radfahrverleih
+
+|Catic Vanesa
+|Flughafen
+
+|Hussein Silin
+|Nachhilfeverwaltung
+
+|Öllinger Zoe
+|Fahrschule
+
+|Anderson Marvin
+|Immobilienverwaltung
+
+|Öller Konstantin
+|Tennisverein
+
+|Zinhobel Luca
+|Fussballspiele Informationsportal
+
+|===
+
+* HÜ:
+** Klassendiagramm in plantuml (3-5 Tabellen)
+** Endpoint ohne Entitäten
+
+
+
+
 
 
 
