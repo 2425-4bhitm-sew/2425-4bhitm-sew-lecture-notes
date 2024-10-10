@@ -269,8 +269,11 @@ image::rest-server-client.png[]
 ** Klassendiagramm in plantuml (3-5 Tabellen)
 ** Endpoint ohne Entitäten
 
+=== Rest Assured mit assertj-core
 
+* https://phauer.com/2016/testing-restful-services-java-best-practices/#use-assertj-to-check-the-returned-pojos[Use AssertJ to Check the Returned POJO^]
 
+* https://phauer.com/2016/testing-restful-services-java-best-practices/#use-assertjs-isequaltoignoringgivenfields[Use AssertJ’s `isEqualToIgnoringGivenFields()`^]
 
 
 

@@ -1,0 +1,22 @@
+### Simple Request
+
+GET localhost:8080/api/hello
+Content-Type: */*
+
+###
+
+POST http://localhost:8080/api/
+Content-Type: application/json
+
+{
+  "id": 999,
+  "value": "content"
+}
+
+###
+
+GET http://localhost:8080/api/time
+Content-Type: text/plain
+
+
+###
