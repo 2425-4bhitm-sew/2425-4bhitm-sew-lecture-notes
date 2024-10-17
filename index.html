@@ -565,7 +565,7 @@ pre.rouge .gs {
 <div class="details">
 <span id="author" class="author">Thomas Stütz</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2024-10-10</span>
+<span id="revdate">2024-10-17</span>
 <br><span id="revremark">Lecture Notes for Courses at HTL Leonding</span>
 </div>
 <div id="toc" class="toc2">
@@ -598,6 +598,13 @@ pre.rouge .gs {
 <li><a href="#_rest_assured">5.1. REST Assured</a></li>
 <li><a href="#_microprojekte">5.2. Microprojekte</a></li>
 <li><a href="#_rest_assured_mit_assertj_core">5.3. Rest Assured mit assertj-core</a></li>
+</ul>
+</li>
+<li><a href="#_2024_10_17">6. 2024-10-17</a>
+<ul class="sectlevel2">
+<li><a href="#_commits">6.1. Commits</a></li>
+<li><a href="#_rest_params">6.2. Rest-Params</a></li>
+<li><a href="#_rest_responses">6.3. REST-Responses</a></li>
 </ul>
 </li>
 </ul>
@@ -924,7 +931,7 @@ pre.rouge .gs {
 <td class="tableblock halign-left valign-top"><p class="tableblock">Friedhofsverwaltung</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brkic Ilijas</p></td>
+<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Restaurant (Tische reservieren)</p></td>
 </tr>
 <tr>
@@ -961,7 +968,7 @@ pre.rouge .gs {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Simsek Atilla</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hotel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fussballspiele Informationsportal</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kaltenberger Elisa</p></td>
@@ -993,7 +1000,7 @@ pre.rouge .gs {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zinhobel Luca</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fussballspiele Informationsportal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hotel</p></td>
 </tr>
 </tbody>
 </table>
@@ -1030,11 +1037,111 @@ pre.rouge .gs {
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_2024_10_17"><a class="anchor" href="#_2024_10_17"></a>6. 2024-10-17</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_commits"><a class="anchor" href="#_commits"></a>6.1. Commits</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Mehrere Commits durchführen: nach jedem thematisch abgeschlossenen Bereich (zB nach einer Methode)</p>
+</li>
+<li>
+<p>Commit-Messages müssen aussagekräftig sein</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.conventionalcommits.org/en/v1.0.0/" class="bare">https://www.conventionalcommits.org/en/v1.0.0/</a></p>
+</li>
+<li>
+<p><a href="https://nitayneeman.com/posts/understanding-semantic-commit-messages-using-git-and-angular/" class="bare">https://nitayneeman.com/posts/understanding-semantic-commit-messages-using-git-and-angular/</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_rest_params"><a class="anchor" href="#_rest_params"></a>6.2. Rest-Params</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://mincong.io/2018/11/27/jax-rs-parameters/" class="bare">https://mincong.io/2018/11/27/jax-rs-parameters/</a></p>
+</li>
+<li>
+<p>microproject</p>
+<div class="ulist">
+<ul>
+<li>
+<p>QueryParam</p>
+</li>
+<li>
+<p>PathParam</p>
+</li>
+<li>
+<p>FormParam</p>
+</li>
+<li>
+<p>Übergabe eines Datums und ev. Uhrzeit</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Welche Propbleme treten auf?</p>
+</li>
+<li>
+<p>Wie kann man diese lösen?</p>
+</li>
+<li>
+<p>Datumsformate?</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_rest_responses"><a class="anchor" href="#_rest_responses"></a>6.3. REST-Responses</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>json - Libraries</p>
+<div class="ulist">
+<ul>
+<li>
+<p>jsonb (<a href="https://javaee.github.io/jsonb-spec/" class="bare">https://javaee.github.io/jsonb-spec/</a>)</p>
+</li>
+<li>
+<p>jackson (<a href="https://github.com/FasterXML/jackson" class="bare">https://github.com/FasterXML/jackson</a>)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>xml als Response Format</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://httpie.io/docs/cli/usage" class="bare">https://httpie.io/docs/cli/usage</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2024-10-10 10:35:38 UTC
+Last updated 2024-10-17 18:04:18 UTC
 </div>
 </div>
 </body>
