@@ -19,4 +19,22 @@ GET http://localhost:8080/api/time
 Content-Type: text/plain
 
 
+### foo
+
+GET http://localhost:8080/api/hello/foo
+Content-Type: text/plain
+
+### hello
+
+
+GET http://localhost:8080/api/hello
+Content-Type: text/plain
+
+### andi
+
+
+GET http://localhost:8080/api/hello/person
+Accept: application/xml
+
 ###
+

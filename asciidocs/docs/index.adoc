@@ -209,7 +209,7 @@ image::rest-server-client.png[]
 |Mayr Tim
 |Friedhofsverwaltung
 
-|Brkic Ilijas
+|
 |Restaurant (Tische reservieren)
 
 |Wizany Linus
@@ -237,7 +237,7 @@ image::rest-server-client.png[]
 |Autovermietung
 
 |Simsek Atilla
-|Hotel
+|Fussballspiele Informationsportal
 
 |Kaltenberger Elisa
 |Bank
@@ -261,7 +261,7 @@ image::rest-server-client.png[]
 |Tennisverein
 
 |Zinhobel Luca
-|Fussballspiele Informationsportal
+|Hotel
 
 |===
 
@@ -274,6 +274,48 @@ image::rest-server-client.png[]
 * https://phauer.com/2016/testing-restful-services-java-best-practices/#use-assertj-to-check-the-returned-pojos[Use AssertJ to Check the Returned POJO^]
 
 * https://phauer.com/2016/testing-restful-services-java-best-practices/#use-assertjs-isequaltoignoringgivenfields[Use AssertJ’s `isEqualToIgnoringGivenFields()`^]
+
+
+== 2024-10-17
+
+=== Commits
+
+* Mehrere Commits durchführen: nach jedem thematisch abgeschlossenen Bereich (zB nach einer Methode)
+
+* Commit-Messages müssen aussagekräftig sein
+** https://www.conventionalcommits.org/en/v1.0.0/
+** https://nitayneeman.com/posts/understanding-semantic-commit-messages-using-git-and-angular/
+
+=== Rest-Params
+
+* https://mincong.io/2018/11/27/jax-rs-parameters/
+
+* microproject
+** QueryParam
+** PathParam
+** FormParam
+** Übergabe eines Datums und ev. Uhrzeit
+*** Welche Propbleme treten auf?
+*** Wie kann man diese lösen?
+*** Datumsformate?
+
+
+=== REST-Responses
+
+* json - Libraries
+
+** jsonb (https://javaee.github.io/jsonb-spec/)
+** jackson (https://github.com/FasterXML/jackson)
+
+* xml als Response Format
+
+** https://httpie.io/docs/cli/usage
+
+
+
+
+
+
 
 
 
