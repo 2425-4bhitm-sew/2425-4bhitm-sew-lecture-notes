@@ -312,10 +312,15 @@ image::rest-server-client.png[]
 ** https://httpie.io/docs/cli/usage
 
 
+== 2024-11-07
 
+=== Package by Layer vs Package by Feature
 
+https://medium.com/sahibinden-technology/package-by-layer-vs-package-by-feature-7e89cde2ae3a[Package by Layer vs Package by Feature^]
 
+image::package-by.png[]
 
+=== Project Vehicle
 
 
 
