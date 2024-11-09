@@ -324,6 +324,16 @@ image::package-by.png[]
 
 == 2024-11-14
 
+=== Nachtrag: QueryParams bei REST-Service
+
+[source,java]
+----
+public Response foo(
+            @QueryParam("county") @DefaultValue("Austria") String country,
+            @QueryParam("size") @DefaultValue("12") int size
+    ) { ... }
+----
+
 === Data-Transfer-Objects (DTO)
 
 * https://htl-leonding-college.github.io/quarkus-lecture-notes/#_variante_4_post_with_dto[^]
