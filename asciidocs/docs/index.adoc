@@ -338,7 +338,7 @@ Opel,Blitz,2024-11-08,3,Pepi
 
 [source, java]
 ----
-public void insertPaymentsFromFile(String fileName) {
+public void insertVehiclesFromFile(String fileName) {
     try (InputStream is = Thread.currentThread()
                                 .getContextClassLoader()
                                 .getResourceAsStream(fileName);
