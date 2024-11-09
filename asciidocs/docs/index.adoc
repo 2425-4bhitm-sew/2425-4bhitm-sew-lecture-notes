@@ -326,6 +326,8 @@ image::package-by.png[]
 
 === Data-Transfer-Objects (DTO)
 
+=== File einlesen
+
 === Probelauf Franklyn
 
 === ev. Qute mit htmx
