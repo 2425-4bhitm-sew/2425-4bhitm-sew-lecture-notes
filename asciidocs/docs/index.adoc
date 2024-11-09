@@ -322,7 +322,13 @@ image::package-by.png[]
 
 === Project Vehicle
 
+== 2024-11-14
 
+=== Data-Transfer-Objects (DTO)
+
+=== Probelauf Franklyn
+
+=== ev. Qute mit htmx
 
 
 
