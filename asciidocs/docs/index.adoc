@@ -326,7 +326,44 @@ image::package-by.png[]
 
 === Data-Transfer-Objects (DTO)
 
+* https://htl-leonding-college.github.io/quarkus-lecture-notes/#_variante_4_post_with_dto[^]
+
 === File einlesen
+
+.src/main/resources/vehicles.csv
+----
+BRAND,MODEL,REGISTRATION_DATE,NO_OF_SEATS,OWNER_NAME
+Opel,Blitz,2024-11-08,3,Pepi
+----
+
+[source, java]
+----
+public void insertPaymentsFromFile(String fileName) {
+    try (InputStream is = Thread.currentThread()
+                                .getContextClassLoader()
+                                .getResourceAsStream(fileName);
+         BufferedReader reader = new BufferedReader(
+                                    new InputStreamReader(is)
+                                 )
+    ) {
+        reader.lines()
+                .skip(1)
+                .peek(arr -> Log.infof("Read line: %s", arr))
+                .map(line -> line.split(","))
+                .map(arr -> new Vehicle(
+                        arr[0],
+                        arr[1],
+                        LocalDate.parse(arr[2], DateTimeFormatter.ISO_DATE),
+                        Double.parseDouble(arr[3]),
+                        new Person(arr[4])))
+                //.forEach(this::persist);
+                .forEach(vehicle -> this.persist(vehicle)
+                );
+    } catch (IOException e) {
+        Log.error("Error reading file " + fileName + ": " + e.getMessage());
+    }
+}
+----
 
 === Probelauf Franklyn
 
