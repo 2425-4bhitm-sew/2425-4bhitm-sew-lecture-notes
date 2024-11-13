@@ -324,6 +324,38 @@ image::package-by.png[]
 
 == 2024-11-14
 
+=== Quarkus Launch Modes
+
+* https://quarkus.io/guides/lifecycle#launch-modes[Launch Modes]
+
+* Launch Modes
+** `NORMAL`
+** `DEVELOPMENT`
+** `TEST`
+
+[source,java]
+----
+package at.htl.taxes.control;
+
+import io.quarkus.runtime.LaunchMode;
+import io.quarkus.runtime.StartupEvent;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.event.Observes;
+import jakarta.inject.Inject;
+
+@ApplicationScoped
+public class InitBean {
+
+    void init(@Observes StartupEvent event) {
+        if (LaunchMode.current() == LaunchMode.DEVELOPMENT) {
+            // ...
+        }
+    }
+
+}
+
+----
+
 === Nachtrag: QueryParams bei REST-Service
 
 [source,java]
@@ -337,6 +369,14 @@ public Response foo(
 === Data-Transfer-Objects (DTO)
 
 * https://htl-leonding-college.github.io/quarkus-lecture-notes/#_variante_4_post_with_dto[^]
+
+----
+stream of Person
+ -> filter by country
+ -> sorted by dob, zip, name
+ -> map to PersonDto
+ -> store in list
+----
 
 === File einlesen
 
