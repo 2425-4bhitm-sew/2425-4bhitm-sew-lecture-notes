@@ -565,7 +565,7 @@ pre.rouge .gs {
 <div class="details">
 <span id="author" class="author">Thomas Stütz</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2024-11-09</span>
+<span id="revdate">2024-11-13</span>
 <br><span id="revremark">Lecture Notes for Courses at HTL Leonding</span>
 </div>
 <div id="toc" class="toc2">
@@ -615,9 +615,12 @@ pre.rouge .gs {
 </li>
 <li><a href="#_2024_11_14">8. 2024-11-14</a>
 <ul class="sectlevel2">
-<li><a href="#_data_transfer_objects_dto">8.1. Data-Transfer-Objects (DTO)</a></li>
-<li><a href="#_probelauf_franklyn">8.2. Probelauf Franklyn</a></li>
-<li><a href="#_ev_qute_mit_htmx">8.3. ev. Qute mit htmx</a></li>
+<li><a href="#_quarkus_launch_modes">8.1. Quarkus Launch Modes</a></li>
+<li><a href="#_nachtrag_queryparams_bei_rest_service">8.2. Nachtrag: QueryParams bei REST-Service</a></li>
+<li><a href="#_data_transfer_objects_dto">8.3. Data-Transfer-Objects (DTO)</a></li>
+<li><a href="#_file_einlesen">8.4. File einlesen</a></li>
+<li><a href="#_probelauf_franklyn">8.5. Probelauf Franklyn</a></li>
+<li><a href="#_ev_qute_mit_htmx">8.6. ev. Qute mit htmx</a></li>
 </ul>
 </li>
 </ul>
@@ -1174,15 +1177,128 @@ pre.rouge .gs {
 <h2 id="_2024_11_14"><a class="anchor" href="#_2024_11_14"></a>8. 2024-11-14</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_data_transfer_objects_dto"><a class="anchor" href="#_data_transfer_objects_dto"></a>8.1. Data-Transfer-Objects (DTO)</h3>
+<h3 id="_quarkus_launch_modes"><a class="anchor" href="#_quarkus_launch_modes"></a>8.1. Quarkus Launch Modes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://quarkus.io/guides/lifecycle#launch-modes">Launch Modes</a></p>
+</li>
+<li>
+<p>Launch Modes</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>NORMAL</code></p>
+</li>
+<li>
+<p><code>DEVELOPMENT</code></p>
+</li>
+<li>
+<p><code>TEST</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="kn">package</span> <span class="nn">at.htl.taxes.control</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">io.quarkus.runtime.LaunchMode</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">io.quarkus.runtime.StartupEvent</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">jakarta.enterprise.context.ApplicationScoped</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">jakarta.enterprise.event.Observes</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">jakarta.inject.Inject</span><span class="o">;</span>
+
+<span class="nd">@ApplicationScoped</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">InitBean</span> <span class="o">{</span>
+
+    <span class="kt">void</span> <span class="nf">init</span><span class="o">(</span><span class="nd">@Observes</span> <span class="nc">StartupEvent</span> <span class="n">event</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="nc">LaunchMode</span><span class="o">.</span><span class="na">current</span><span class="o">()</span> <span class="o">==</span> <span class="nc">LaunchMode</span><span class="o">.</span><span class="na">DEVELOPMENT</span><span class="o">)</span> <span class="o">{</span>
+            <span class="c1">// ...</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+<span class="o">}</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nachtrag_queryparams_bei_rest_service"><a class="anchor" href="#_nachtrag_queryparams_bei_rest_service"></a>8.2. Nachtrag: QueryParams bei REST-Service</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="kd">public</span> <span class="nc">Response</span> <span class="nf">foo</span><span class="o">(</span>
+            <span class="nd">@QueryParam</span><span class="o">(</span><span class="s">"county"</span><span class="o">)</span> <span class="nd">@DefaultValue</span><span class="o">(</span><span class="s">"Austria"</span><span class="o">)</span> <span class="nc">String</span> <span class="n">country</span><span class="o">,</span>
+            <span class="nd">@QueryParam</span><span class="o">(</span><span class="s">"size"</span><span class="o">)</span> <span class="nd">@DefaultValue</span><span class="o">(</span><span class="s">"12"</span><span class="o">)</span> <span class="kt">int</span> <span class="n">size</span>
+    <span class="o">)</span> <span class="o">{</span> <span class="o">...</span> <span class="o">}</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_data_transfer_objects_dto"><a class="anchor" href="#_data_transfer_objects_dto"></a>8.3. Data-Transfer-Objects (DTO)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://htl-leonding-college.github.io/quarkus-lecture-notes/#_variante_4_post_with_dto" class="bare" target="_blank" rel="noopener">https://htl-leonding-college.github.io/quarkus-lecture-notes/#_variante_4_post_with_dto</a></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>stream of Person
+ -&gt; filter by country
+ -&gt; sorted by dob, zip, name
+ -&gt; map to PersonDto
+ -&gt; store in list</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_file_einlesen"><a class="anchor" href="#_file_einlesen"></a>8.4. File einlesen</h3>
+<div class="listingblock">
+<div class="title">src/main/resources/vehicles.csv</div>
+<div class="content">
+<pre>BRAND,MODEL,REGISTRATION_DATE,NO_OF_SEATS,OWNER_NAME
+Opel,Blitz,2024-11-08,3,Pepi</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">insertVehiclesFromFile</span><span class="o">(</span><span class="nc">String</span> <span class="n">fileName</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">try</span> <span class="o">(</span><span class="nc">InputStream</span> <span class="n">is</span> <span class="o">=</span> <span class="nc">Thread</span><span class="o">.</span><span class="na">currentThread</span><span class="o">()</span>
+                                <span class="o">.</span><span class="na">getContextClassLoader</span><span class="o">()</span>
+                                <span class="o">.</span><span class="na">getResourceAsStream</span><span class="o">(</span><span class="n">fileName</span><span class="o">);</span>
+         <span class="nc">BufferedReader</span> <span class="n">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span>
+                                    <span class="k">new</span> <span class="nf">InputStreamReader</span><span class="o">(</span><span class="n">is</span><span class="o">)</span>
+                                 <span class="o">)</span>
+    <span class="o">)</span> <span class="o">{</span>
+        <span class="n">reader</span><span class="o">.</span><span class="na">lines</span><span class="o">()</span>
+                <span class="o">.</span><span class="na">skip</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">peek</span><span class="o">(</span><span class="n">arr</span> <span class="o">-&gt;</span> <span class="nc">Log</span><span class="o">.</span><span class="na">infof</span><span class="o">(</span><span class="s">"Read line: %s"</span><span class="o">,</span> <span class="n">arr</span><span class="o">))</span>
+                <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">line</span> <span class="o">-&gt;</span> <span class="n">line</span><span class="o">.</span><span class="na">split</span><span class="o">(</span><span class="s">","</span><span class="o">))</span>
+                <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">arr</span> <span class="o">-&gt;</span> <span class="k">new</span> <span class="nc">Vehicle</span><span class="o">(</span>
+                        <span class="n">arr</span><span class="o">[</span><span class="mi">0</span><span class="o">],</span>
+                        <span class="n">arr</span><span class="o">[</span><span class="mi">1</span><span class="o">],</span>
+                        <span class="nc">LocalDate</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="mi">2</span><span class="o">],</span> <span class="nc">DateTimeFormatter</span><span class="o">.</span><span class="na">ISO_DATE</span><span class="o">),</span>
+                        <span class="nc">Double</span><span class="o">.</span><span class="na">parseDouble</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="mi">3</span><span class="o">]),</span>
+                        <span class="k">new</span> <span class="nf">Person</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="mi">4</span><span class="o">])))</span>
+                <span class="c1">//.forEach(this::persist);</span>
+                <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">vehicle</span> <span class="o">-&gt;</span> <span class="k">this</span><span class="o">.</span><span class="na">persist</span><span class="o">(</span><span class="n">vehicle</span><span class="o">)</span>
+                <span class="o">);</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Log</span><span class="o">.</span><span class="na">error</span><span class="o">(</span><span class="s">"Error reading file "</span> <span class="o">+</span> <span class="n">fileName</span> <span class="o">+</span> <span class="s">": "</span> <span class="o">+</span> <span class="n">e</span><span class="o">.</span><span class="na">getMessage</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_probelauf_franklyn"><a class="anchor" href="#_probelauf_franklyn"></a>8.5. Probelauf Franklyn</h3>
 
 </div>
 <div class="sect2">
-<h3 id="_probelauf_franklyn"><a class="anchor" href="#_probelauf_franklyn"></a>8.2. Probelauf Franklyn</h3>
-
-</div>
-<div class="sect2">
-<h3 id="_ev_qute_mit_htmx"><a class="anchor" href="#_ev_qute_mit_htmx"></a>8.3. ev. Qute mit htmx</h3>
+<h3 id="_ev_qute_mit_htmx"><a class="anchor" href="#_ev_qute_mit_htmx"></a>8.6. ev. Qute mit htmx</h3>
 
 </div>
 </div>
@@ -1191,7 +1307,7 @@ pre.rouge .gs {
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2024-11-09 09:45:29 UTC
+Last updated 2024-11-13 15:43:30 UTC
 </div>
 </div>
 </body>
