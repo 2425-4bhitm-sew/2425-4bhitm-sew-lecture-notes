@@ -16,6 +16,8 @@ public class InitBean {
         if (LaunchMode.current() == LaunchMode.DEVELOPMENT) {
             vehicleRepository.createData();
         }
+
+        // TODO: mach was
     }
 
 

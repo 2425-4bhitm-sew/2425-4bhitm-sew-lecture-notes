@@ -415,6 +415,23 @@ public void insertVehiclesFromFile(String fileName) {
 }
 ----
 
+=== JPA
+
+.Betriebsmodi von Datenbanken (DerbyDb, H2 u.a. in Java implementierte DBs)
+image::betriebsmodi-datenbanken.png[]
+
+.How Java works
+image::java-jvm.png[]
+
+
+
+
+
+
+
+
+
+
 === Probelauf Franklyn
 
 === ev. Qute mit htmx
