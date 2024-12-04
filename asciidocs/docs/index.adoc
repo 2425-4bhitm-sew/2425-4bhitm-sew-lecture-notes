@@ -424,15 +424,19 @@ image::betriebsmodi-datenbanken.png[]
 image::java-jvm.png[]
 
 
+=== Nachtrag REST-Services
+
+* https://phauer.com/2015/restful-api-design-best-practices/[RESTful API Design. Best Practices in a Nutshell (Philipp Hauer)^]
+* https://jsonapi.org/format/[JSON:API^]
+
+
+=== Testing
+
+* https://phauer.com/2019/modern-best-practices-testing-java/[Modern Best Practices for Testing in Java (Philipp Hauer)^]
 
 
 
 
-
-
-
-
-=== Probelauf Franklyn
 
 === ev. Qute mit htmx
 
