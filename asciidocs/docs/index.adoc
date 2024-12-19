@@ -464,14 +464,38 @@ image::reverse-engineering.png[]
 
 image::assertj-db.png[]
 
+=== 2024-12-19
+
+=== JPA - Bsp Vehicle - Rental
+
+* xxx
+
+[plantuml,cld-vehicle-rental,png]
+----
+@startuml
+class Vehicle {
+}
+
+class Person {
+}
 
 
+@enduml
+----
+
+Übung:
+
+* Der Test `VehicleResourceTest` ist so zu ändern, dass anstelle des hamcrest matchers ein junit-core matcher verwendet wird.
+
+** https://phauer.com/2016/testing-restful-services-java-best-practices/
+
+=== Regressions-Tests
+
+* "Alte" Tests werden immer wieder ausgeführt, um sicherzustellen, dass bei Einführung neuer Funktionalität oder Bugfixen auch die bestehende Funktionalität noch gegeben ist.
 
 
+=== Logging
 
-
-
-
-
+image::rollierende-logs.png[]
 
 

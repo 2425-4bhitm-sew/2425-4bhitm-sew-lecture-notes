@@ -6,25 +6,38 @@ import java.util.Objects;
 
 @NamedQueries({
         @NamedQuery(name = "Vehicle.findAll",
-                    query = "select v from Vehicle v"
+                query = "select v from Vehicle v"
         ),
         @NamedQuery(name = "Vehicle.deleteAll",
-                    query = "delete from Vehicle v"
+                query = "delete from Vehicle v"
         )
 })
 @Entity
 @Table(name = "V_VEHICLE")
 public class Vehicle {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "VE_ID")
     private Long id;
 
+    @Column(name = "VE_BRAND")
     private String brand;
+
+    @Column(name = "VE_MODEL")
     private String model;
 
-    public Vehicle(String brand, String model) {
+    @Column(name = "VE_PRICE_PER_DAY")
+    private double pricePerDay;
+
+    public Vehicle(String brand, String model, double pricePerDay) {
         this.brand = brand;
         this.model = model;
+        this.pricePerDay = pricePerDay;
+    }
+
+    public Vehicle(String brand, String model) {
+        this(brand, model, Double.NaN);
     }
 
     public Vehicle() {
@@ -54,22 +67,29 @@ public class Vehicle {
         this.model = model;
     }
 
+    public double getPricePerDay() {
+        return pricePerDay;
+    }
+
+    public void setPricePerDay(double price) {
+        this.pricePerDay = price;
+    }
+
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Vehicle vehicle = (Vehicle) o;
-        return Objects.equals(brand, vehicle.brand) && Objects.equals(model, vehicle.model);
+        return Objects.equals(id, vehicle.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(brand, model);
+        return Objects.hashCode(id);
     }
 
     @Override
     public String toString() {
-        return String.format("%s %s", getBrand(), getModel());
+        return String.format("%d: %s %s (%.2f €)", getId(), getBrand(), getModel(), getPricePerDay());
     }
 
 

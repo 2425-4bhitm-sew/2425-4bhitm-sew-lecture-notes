@@ -1,0 +1,15 @@
+@startuml
+left to right direction
+class Vehicle {
+}
+
+class Person {
+}
+
+class Rental {
+}
+
+Vehicle "*" -- "*" Person
+(Vehicle, Person) .. Rental
+
+@enduml

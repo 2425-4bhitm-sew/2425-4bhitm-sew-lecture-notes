@@ -15,6 +15,7 @@ public class InitBean {
     void init(@Observes StartupEvent event) {
         if (LaunchMode.current() == LaunchMode.DEVELOPMENT) {
             vehicleRepository.createData();
+            Log.info("Data created");
         }
 
         // TODO: mach was
