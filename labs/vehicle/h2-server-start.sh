@@ -20,6 +20,13 @@ java -cp h2*.jar org.h2.tools.Shell -url $JDBC_URL \
                                     -sql "select 'h2 version: ' || setting_value from information_schema.settings where setting_name = 'info.VERSION';"
 #-sql "CREATE TABLE IF NOT EXISTS test(id INT PRIMARY KEY, name VARCHAR(255));"
 
+echo ++++++++++++++++++++++++++++++++++++++++
+echo  JDBC URL: jdbc:h2:tcp://localhost/db
+echo  Username: $USERNAME
+echo  Password: $PASSWORD
+echo ++++++++++++++++++++++++++++++++++++++++
+
+
 # Start the H2 database server
 java -cp h2*.jar org.h2.tools.Server -tcp \
                                      -tcpAllowOthers \

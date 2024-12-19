@@ -434,11 +434,44 @@ image::java-jvm.png[]
 
 * https://phauer.com/2019/modern-best-practices-testing-java/[Modern Best Practices for Testing in Java (Philipp Hauer)^]
 
-
+* https://phauer.com/2016/testing-restful-services-java-best-practices/[Testing RESTful Services in Java: Best Practices (Philipp Hauer)^]
 
 
 
 === ev. Qute mit htmx
+
+
+== 2024-12-12
+
+image::reverse-engineering.png[]
+
+
+=== JPA - Projekt vorbereiten
+
+[source,xml]
+----
+<dependency>
+    <groupId>io.quarkus</groupId>
+    <artifactId>quarkus-hibernate-orm</artifactId>
+</dependency>
+<dependency>
+    <groupId>io.quarkus</groupId>
+    <artifactId>quarkus-jdbc-h2</artifactId>
+</dependency>
+----
+
+=== Test-Library assertj-db
+
+image::assertj-db.png[]
+
+
+
+
+
+
+
+
+
 
 
 
