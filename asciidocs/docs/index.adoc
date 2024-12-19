@@ -468,16 +468,22 @@ image::assertj-db.png[]
 
 === JPA - Bsp Vehicle - Rental
 
-* xxx
 
 [plantuml,cld-vehicle-rental,png]
 ----
 @startuml
+left to right direction
 class Vehicle {
 }
 
 class Person {
 }
+
+class Rental {
+}
+
+Vehicle "*" -- "*" Person
+(Vehicle, Person) .. Rental
 
 
 @enduml
