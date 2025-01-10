@@ -505,3 +505,25 @@ Vehicle "*" -- "*" Person
 image::rollierende-logs.png[]
 
 
+== 2025-01-09
+
+* https://www.youtube.com/playlist?list=PLievaKnl8uRSgpiXpeCFGoLDX_y46jgdb
+
+
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=eUaGEo4j9Y5sUBhn&amp;list=PLievaKnl8uRSgpiXpeCFGoLDX_y46jgdb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+++++
+
+
+image::repository-per-aggregate.png[]
+
+
+* Übung: Im Mikroprojekt Queries erstellen und mittels REST-Service abfragen können
+
+** mind. eine Query mit Aggregation
+** mind. eine Query auf eine Tabelle mit Detail-Ds
+** mind eine Query mit Join über 3 Tabellen
+** einen REST-Endpoint mit CREATE
+** einen REST-Endpoint mit UPDATE
+** einen REST-Endpoint mit DELETE
