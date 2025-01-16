@@ -5,4 +5,15 @@ export interface Model {
     todos: ToDo[]
 }
 
-export const model: Model = {todos: []}
+const handler2: ProxyHandler<Model> = {
+    get(model, prop, receiver) {
+        console.log("getter ", model, prop)
+        return model.todos;
+    },
+};
+
+const state: Model = {todos: []}
+
+export const model = new Proxy(state, handler2);
+
+

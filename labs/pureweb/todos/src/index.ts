@@ -7,7 +7,8 @@ async function start() {
     model.todos = await loadAllToDos()
     console.log("todos: ", model.todos)
     const body = document.querySelector("body")
-    render(body, model.todos)  // Problem: das rendern muss angestossen werden
+    //render(body, model.todos)  // Problem: das rendern muss angestossen werden
+    // Abhilfe: wir brauchen das Observer Pattern für JS
 }
 
 function render(base: HTMLElement, todos: ToDo[]) {
