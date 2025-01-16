@@ -539,3 +539,37 @@ image::repository-per-aggregate.png[]
 * DQL: Data Query Language SELECT
 * DCL: Data Control Language GRANT REVOKE
 
+=== Informationswürfel
+
+* Nicht nur das Erstellen von Datenbank-Schemata ist wichtig und das Einfügen von Daten, sondern auch das Lesen und Auswerten von Daten
+
+image::informationswuerfel.png[]
+
+
+=== Exkurs: Pure Web Programming
+
+* Die drei "Quellen":
+** https://developer.mozilla.org
+** https://developer.android.com
+** https://developer.apple.com/
+
+
+==== ES6 Proxies
+
+* https://caniuse.com/?search=es6%20proxy
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy
+
+
+image::es6-proxies.png[]
+
+
+
+
+
+
+
+
+
+
+
+
