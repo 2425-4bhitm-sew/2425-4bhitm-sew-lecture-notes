@@ -7,7 +7,7 @@ async function start() {
     model.todos = await loadAllToDos()
     console.log("todos: ", model.todos)
     const body = document.querySelector("body")
-    render(body, model.todos)
+    render(body, model.todos)  // Problem: das rendern muss angestossen werden
 }
 
 function render(base: HTMLElement, todos: ToDo[]) {
