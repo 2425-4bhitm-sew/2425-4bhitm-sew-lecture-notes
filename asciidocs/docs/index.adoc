@@ -527,3 +527,15 @@ image::repository-per-aggregate.png[]
 ** einen REST-Endpoint mit CREATE
 ** einen REST-Endpoint mit UPDATE
 ** einen REST-Endpoint mit DELETE
+
+
+== 2025-01-16
+
+=== SQL
+
+* DML: Data Manipulation Language INSERT, UPDATE, DELETE
+* DDL: Data Definition Language CREATE, ALTER, DROP
+* TCL: Transaction Control Language COMMIT, ROLLBACK, SET SAVEPOINT
+* DQL: Data Query Language SELECT
+* DCL: Data Control Language GRANT REVOKE
+

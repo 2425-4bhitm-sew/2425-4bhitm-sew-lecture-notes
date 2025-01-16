@@ -17,7 +17,7 @@ import java.util.Objects;
 public class Vehicle {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.UUID)
     @Column(name = "VE_ID")
     private Long id;
 
