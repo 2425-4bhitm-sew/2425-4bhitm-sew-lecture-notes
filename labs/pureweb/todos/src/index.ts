@@ -3,11 +3,14 @@ import { loadAllToDos } from "./features/todo/todo-service"
 import {model} from "./features/todo/model";
 console.log("Hello World!")
 
+start()
+
 async function start() {
     model.todos = await loadAllToDos()
     console.log("todos: ", model.todos)
+    console.log("myName: ", model.myName)
     const body = document.querySelector("body")
-    //render(body, model.todos)  // Problem: das rendern muss angestossen werden
+    render(body, model.todos)  // Problem: das rendern muss angestossen werden
     // Abhilfe: wir brauchen das Observer Pattern für JS
 }
 
@@ -25,4 +28,4 @@ function render(base: HTMLElement, todos: ToDo[]) {
     todos.forEach(createRow)   
     base.appendChild(div) 
 }
-start()
+
