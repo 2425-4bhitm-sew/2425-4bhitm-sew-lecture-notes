@@ -21,6 +21,7 @@ const handler: ProxyHandler<Model> = {
     set(model: Model, p: string | symbol, newValue: any, receiver: any) {
         const success = Reflect.set(model, p, newValue, receiver)
         console.log("setter ", model, p, receiver)
+        subscribers.forEach(subscriber => subscriber(model))
         return success
     }
 };

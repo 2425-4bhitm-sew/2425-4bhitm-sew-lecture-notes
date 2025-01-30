@@ -576,6 +576,25 @@ image::informationswuerfel.png[]
 image::es6-proxies.png[]
 
 
+== 2025-01-30
+
+* Jedes ts-file ist auch als js-file gültig
+
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+
+
+=== Custom Elements
+
+* https://caniuse.com/?search=custom%20elements
+* `-` muss im Elementnamen enthalten sein. Der Standard garantiert, dass künftige HTML-Elemente keine `-` enthalten werden.
+
+* Custom Elements:
+** Tag-Namen registrieren + JavaScript-Klasse definieren
+
+
+
+
 
 
 
