@@ -4,6 +4,8 @@ Thomas Stütz
 :icons: font
 :experimental:
 :sectnums:
+:source-highlighter: rouge
+:docinfo: shared
 ifndef::imagesdir[:imagesdir: images]
 :toc:
 ifdef::backend-html5[]
@@ -593,6 +595,154 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 ** Tag-Namen registrieren + JavaScript-Klasse definieren
 
 
+
+
+== 2025-02-06
+
+=== Kommunikation zwischen (heterogenen) Systemen
+
+* REST
+** Kommunikation für Prozesse und System
+** Es stehen fix definierte Endpoints zur Verfügung (Struktur der json-Objekte ist vordefiniert)
+** Man mus einen Request absetzen um einen Response zu erhalten (Der REST-Server kann von sich aus den Client nicht erreichen)
++
+*** Bsp:
+Die Ergebnisse eines Fussballspiels werden an einen RPi übertragen, damit dieser die Ergebnisse auf einem Display anzeigen kann.
++
+Verwendet man dazu REST, muss der RPi regelmäßig den Server abfragen, ob es neue Ergebnisse gibt. Man spricht hierbei von *Polling*.
+
+* Websockets
+** https://quarkus.io/guides/websockets
+** Websockets addressieren die Problematik des Pollings. Der Server kann den Client erreichen und ihm Daten senden.
+** Websockets sind bidirektional
+
+* Server-Sent Events SSE
+** SSE sind vergleichbar mit Websockets, jedoch nur in eine Richtung. Der Server kann Daten an den Client senden, der Client kann jedoch nicht antworten.
+
+* graphql
+** https://graphql.org/learn/
+** https://quarkus.io/guides/smallrye-graphql
+** https://quarkus.io/guides/smallrye-graphql-client
+** Bei REST sind die json-Dokumente fix strukturiert. Dies kann bei umfangreichen REST-Schnittstellen (zB GitHub) zu Problemen führen.
+** Bei graphql kann der Client die Struktur des json-Dokuments definieren, das er erhalten möchte.
+
+* gRPC
+** https://quarkus.io/guides/grpc-getting-started
+** https://quarkus.io/guides/grpc
+** gRPC ist ein Protokoll, das auf HTTP/2 basiert. Es ist schneller als REST und kann auch bidirektional kommunizieren.
+
+
+=== Zusammengesetzter Schlüssel
+
+[plantuml,composite-key,png]
+----
+@startuml
+class Vehicle{}
+
+class Customer{}
+
+class Rental{
+  - RentalId: Long
+  - VehicleId: Long
+  - CustomerId: Long
+}
+
+()
+
+@enduml
+----
+
+
+
+
+
+
+IMPORTANT: Im nächsten Test Aufgabe zu Asciidoctor und plantuml
+
+
+=== Asciidoctor
+
+==== Admonitions
+
+* Voraussetzung `:icons: font` in Präambel
+
+IMPORTANT: Das ist wichtig
+
+[source,text]
+----
+    ifdef::env-github[]
+    :tip-caption: :bulb:
+    :note-caption: :information_source:
+    :important-caption: :heavy_exclamation_mark:
+    :caution-caption: :fire:
+    :warning-caption: :warning:
+    endif::[]
+----
+
+* Admonition mit Block
+
+[IMPORTANT]
+.Feeding the Werewolves
+====
+While werewolves are hardy community members, keep in mind the following dietary concerns:
+
+. They are allergic to cinnamon.
+. More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.
+. Celery makes them sad.
+====
+
+
+
+==== Callouts
+
+[source,java,highlight=1;3]
+----
+public class MyStack {
+
+
+    boolean isEmpty() { // <.>
+        return true; // <.>
+    }
+
+}
+----
+
+<.> Kommentar 1
+<.> Kommentar 2
+
+
+[source,java,highlight=1;3]
+----
+include::../../labs/vehicle/src/main/java/at/htl/vehicle/entity/Vehicle.java[tags=constructor]
+----
+
+<.> Auch das ist ein #Kommentar#
+
+
+
+|===
+|Header 1 |Header 2
+
+a|
+* ydbfcsdbfd
+* dsfg
+sdg
+|Column 2, row 1
+
+|Column 1, row 2
+|Column 2, row 2
+
+|Column 1, row 3
+|Column 2, row 3
+|===
+
+=== Static Site Generator - Quarkus Roq
+
+* https://docs.quarkiverse.io/quarkus-roq/dev/index.html
+
+* https://jamstack.org/generators/
+
+* https://themes.gohugo.io/
 
 
 

@@ -30,10 +30,11 @@ public class Vehicle {
     @Column(name = "VE_PRICE_PER_DAY")
     private double pricePerDay;
 
+    // tag::constructor[]
     public Vehicle(String brand, String model, double pricePerDay) {
         this.brand = brand;
         this.model = model;
-        this.pricePerDay = pricePerDay;
+        this.pricePerDay = pricePerDay; // <.>
     }
 
     public Vehicle(String brand, String model) {
@@ -42,7 +43,7 @@ public class Vehicle {
 
     public Vehicle() {
     }
-
+    // end::constructor[]
     public Long getId() {
         return id;
     }
