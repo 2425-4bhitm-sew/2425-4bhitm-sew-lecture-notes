@@ -596,6 +596,12 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 
 
 
+* https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+
+
+
 
 == 2025-02-06
 
@@ -747,6 +753,36 @@ sdg
 
 
 
+== 2025-02-13
+
+image::referenztyp-vs-primitivdatentyp.png[]
+
+
+=== Rest-Client
+
+* https://quarkus.io/guides/rest-client
+
+image::bsp-rest-client.png[]
+
+
+=== MQTT
+
+* Telemetrie („Fernmessung“; von altgriechisch τῆλε (tēle, „fern“) und μέτρον (métron, „Maß“ oder „Maßstab“)) ist die Übertragung von Messwerten eines am Messort befindlichen Messfühlers (Sensor) zu einer räumlich getrennten Stelle. [wikipedia]
+
+* MQTT stands for Message Queuing Telemetry Transport. It is a lightweight messaging protocol for use in cases where clients need a small code footprint and are connected to unreliable networks or networks with limited bandwidth resources. [https://www.paessler.com/it-explained/mqtt^]
+
+image::rest-vs-mqtt.png[]
+
+* Server-Produkte:
+** mosquitto
+** rabbitMQ
+** hiveMQ
+** Apache Kafka
+
+* Client-Produkte
+** MQTT-Explorer
+
+https://www.youtube.com/playlist?list=PLievaKnl8uRQVueMOeBE7KVxNM231hje4
 
 
 
