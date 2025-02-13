@@ -565,7 +565,7 @@ pre.rouge .gs {
 <div class="details">
 <span id="author" class="author">Thomas Stütz</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2025-01-30</span>
+<span id="revdate">2025-02-13</span>
 <br><span id="revremark">Lecture Notes for Courses at HTL Leonding</span>
 </div>
 <div id="toc" class="toc2">
@@ -651,6 +651,14 @@ pre.rouge .gs {
 <li><a href="#_2025_01_30">12. 2025-01-30</a>
 <ul class="sectlevel2">
 <li><a href="#_custom_elements">12.1. Custom Elements</a></li>
+</ul>
+</li>
+<li><a href="#_2025_02_06">13. 2025-02-06</a>
+<ul class="sectlevel2">
+<li><a href="#_kommunikation_zwischen_heterogenen_systemen">13.1. Kommunikation zwischen (heterogenen) Systemen</a></li>
+<li><a href="#_zusammengesetzter_schlüssel">13.2. Zusammengesetzter Schlüssel</a></li>
+<li><a href="#_asciidoctor">13.3. Asciidoctor</a></li>
+<li><a href="#_static_site_generator_quarkus_roq">13.4. Static Site Generator - Quarkus Roq</a></li>
 </ul>
 </li>
 </ul>
@@ -1654,11 +1662,328 @@ Opel,Blitz,2024-11-08,3,Pepi</pre>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_2025_02_06"><a class="anchor" href="#_2025_02_06"></a>13. 2025-02-06</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_kommunikation_zwischen_heterogenen_systemen"><a class="anchor" href="#_kommunikation_zwischen_heterogenen_systemen"></a>13.1. Kommunikation zwischen (heterogenen) Systemen</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>REST</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Kommunikation für Prozesse und System</p>
+</li>
+<li>
+<p>Es stehen fix definierte Endpoints zur Verfügung (Struktur der json-Objekte ist vordefiniert)</p>
+</li>
+<li>
+<p>Man mus einen Request absetzen um einen Response zu erhalten (Der REST-Server kann von sich aus den Client nicht erreichen)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Bsp:
+Die Ergebnisse eines Fussballspiels werden an einen RPi übertragen, damit dieser die Ergebnisse auf einem Display anzeigen kann.</p>
+<div class="paragraph">
+<p>Verwendet man dazu REST, muss der RPi regelmäßig den Server abfragen, ob es neue Ergebnisse gibt. Man spricht hierbei von <strong>Polling</strong>.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Websockets</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://quarkus.io/guides/websockets" class="bare">https://quarkus.io/guides/websockets</a></p>
+</li>
+<li>
+<p>Websockets addressieren die Problematik des Pollings. Der Server kann den Client erreichen und ihm Daten senden.</p>
+</li>
+<li>
+<p>Websockets sind bidirektional</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Server-Sent Events SSE</p>
+<div class="ulist">
+<ul>
+<li>
+<p>SSE sind vergleichbar mit Websockets, jedoch nur in eine Richtung. Der Server kann Daten an den Client senden, der Client kann jedoch nicht antworten.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>graphql</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://graphql.org/learn/" class="bare">https://graphql.org/learn/</a></p>
+</li>
+<li>
+<p><a href="https://quarkus.io/guides/smallrye-graphql" class="bare">https://quarkus.io/guides/smallrye-graphql</a></p>
+</li>
+<li>
+<p><a href="https://quarkus.io/guides/smallrye-graphql-client" class="bare">https://quarkus.io/guides/smallrye-graphql-client</a></p>
+</li>
+<li>
+<p>Bei REST sind die json-Dokumente fix strukturiert. Dies kann bei umfangreichen REST-Schnittstellen (zB GitHub) zu Problemen führen.</p>
+</li>
+<li>
+<p>Bei graphql kann der Client die Struktur des json-Dokuments definieren, das er erhalten möchte.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>gRPC</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://quarkus.io/guides/grpc-getting-started" class="bare">https://quarkus.io/guides/grpc-getting-started</a></p>
+</li>
+<li>
+<p><a href="https://quarkus.io/guides/grpc" class="bare">https://quarkus.io/guides/grpc</a></p>
+</li>
+<li>
+<p>gRPC ist ein Protokoll, das auf HTTP/2 basiert. Es ist schneller als REST und kann auch bidirektional kommunizieren.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_zusammengesetzter_schlüssel"><a class="anchor" href="#_zusammengesetzter_schlüssel"></a>13.2. Zusammengesetzter Schlüssel</h3>
+<div class="listingblock">
+<div class="content">
+<pre>Failed to generate image: PlantUML preprocessing failed: [From &lt;input&gt; (line 12) ]
+
+@startuml
+class Vehicle{}
+
+class Customer{}
+
+class Rental{
+  - RentalId: Long
+  - VehicleId: Long
+  - CustomerId: Long
+}
+
+()
+^^^^^
+ Syntax Error?
+
+@startuml
+class Vehicle{}
+
+class Customer{}
+
+class Rental{
+  - RentalId: Long
+  - VehicleId: Long
+  - CustomerId: Long
+}
+
+()
+
+@enduml</pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Im nächsten Test Aufgabe zu Asciidoctor und plantuml
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_asciidoctor"><a class="anchor" href="#_asciidoctor"></a>13.3. Asciidoctor</h3>
+<div class="sect3">
+<h4 id="_admonitions"><a class="anchor" href="#_admonitions"></a>13.3.1. Admonitions</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Voraussetzung <code>:icons: font</code> in Präambel</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Das ist wichtig
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="text">    ifdef::env-github[]
+    :tip-caption: :bulb:
+    :note-caption: :information_source:
+    :important-caption: :heavy_exclamation_mark:
+    :caution-caption: :fire:
+    :warning-caption: :warning:
+    endif::[]</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Admonition mit Block</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Feeding the Werewolves</div>
+<div class="paragraph">
+<p>While werewolves are hardy community members, keep in mind the following dietary concerns:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>They are allergic to cinnamon.</p>
+</li>
+<li>
+<p>More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.</p>
+</li>
+<li>
+<p>Celery makes them sad.</p>
+</li>
+</ol>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_callouts"><a class="anchor" href="#_callouts"></a>13.3.2. Callouts</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="hll"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyStack</span> <span class="o">{</span>
+</span>
+<span class="hll">
+</span>    <span class="kt">boolean</span> <span class="nf">isEmpty</span><span class="o">()</span> <span class="o">{</span> <i class="conum" data-value="1"></i><b>(1)</b>
+        <span class="k">return</span> <span class="kc">true</span><span class="o">;</span> <i class="conum" data-value="2"></i><b>(2)</b>
+    <span class="o">}</span>
+
+<span class="o">}</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Kommentar 1</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Kommentar 2</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="hll"><span class="nc">Unresolved</span> <span class="n">directive</span> <span class="n">in</span> <span class="n">index</span><span class="o">.</span><span class="na">adoc</span> <span class="o">-</span> <span class="nl">include:</span><span class="o">:../../</span><span class="n">labs</span><span class="o">/</span><span class="n">vehicle</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">java</span><span class="o">/</span><span class="n">at</span><span class="o">/</span><span class="n">htl</span><span class="o">/</span><span class="n">vehicle</span><span class="o">/</span><span class="n">entity</span><span class="o">/</span><span class="nc">Vehicle</span><span class="o">.</span><span class="na">java</span><span class="o">[</span><span class="n">tags</span><span class="o">=</span><span class="n">constructor</span><span class="o">]</span>
+</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Auch das ist ein <mark>Kommentar</mark></td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header 1</th>
+<th class="tableblock halign-left valign-top">Header 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>ydbfcsdbfd</p>
+</li>
+<li>
+<p>dsfg
+sdg</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Column 2, row 1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Column 1, row 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Column 2, row 2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Column 1, row 3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Column 2, row 3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_static_site_generator_quarkus_roq"><a class="anchor" href="#_static_site_generator_quarkus_roq"></a>13.4. Static Site Generator - Quarkus Roq</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.quarkiverse.io/quarkus-roq/dev/index.html" class="bare">https://docs.quarkiverse.io/quarkus-roq/dev/index.html</a></p>
+</li>
+<li>
+<p><a href="https://jamstack.org/generators/" class="bare">https://jamstack.org/generators/</a></p>
+</li>
+<li>
+<p><a href="https://themes.gohugo.io/" class="bare">https://themes.gohugo.io/</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2025-01-30 11:40:18 UTC
+Last updated 2025-02-13 07:25:58 UTC
 </div>
 </div>
 </body>
