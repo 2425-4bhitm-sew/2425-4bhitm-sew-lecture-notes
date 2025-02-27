@@ -1,0 +1,283 @@
+= Übung "Car-Rental"
+// Metadata
+Thomas W. Stütz
+1.0.0, 2025-02-06: 4bhitm - SEW - Prüfung 1.HJ
+ifndef::imagesdir[:imagesdir: images]
+//:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+:toclevels: 4
+:toc: left
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+[discrete]
+== Lernziele
+
+* Quarkus: Erstellen von Entitäten, Repositories und Rest-Endpoints
+
+[discrete]
+== Nicht erlaubte Hilfsmittel
+
+* die Hilfe anderer Personen
+* fertige Projekte (auf git-hostern oder auch lokal)
+** nicht erlaubt sind also github, bitbucket, gitlab usw.
+* Lange (vollständige) Programmcodes (egal von welcher Quelle)
+* das "Internet"
+
+== Ausgangssituation
+
+Ein Besitzer eines Autoverleihs beauftragt Sie ein Backend für seine Geschäftsabwicklung zu erstellen.
+
+Verwenden Sie hierzu das nachfolgende (stark vereinfachte) Klassendiagramm:
+
+.Class Diagram
+image::cld.png[]
+
+
+[%autowidth]
+|===
+|Field |Notes
+
+|name
+|Marke und Modell des Fahrzeugs zB "Opel Kadett  C"
+
+|yyyy
+|Baujahr
+
+|origin
+|Herkunft, zB USA, Japan, Europa
+
+|===
+
+
+== Aufgabenstellung
+
+
+=== Lesen Sie die gesamte Angabe aufmerksam durch
+
+* Falls Ihnen etwas unklar ist, fragen Sie ...
+
+IMPORTANT: Nach jeder (zu programmierenden) Aufgabe führen Sie ein Commit durch.
+
+=== Entities und Repositories
+
+. Erstellen Sie die Entitäten entsprechend dem obigen Datenmodell. Ev. Änderungen sind nur nach Rücksprache mit der Lehrkraft durchzuführen.
+
+. Erstellen Sie entsprechende Repositories und implementieren Sie die CRUD-Methoden für die beiden Entitäten.
+.. Sie dürfen Pánache verwenden
+.. Das ERD soll folgendermaßen aussehen:
++
+image::erd.png[]
+
+
+
+
+=== Initialisieren der Datenbank
+
+* Sie dürfen die beigefügten scripts verwenden, um die Datenbank zu initialisieren.
+
+//==== Download der derbydb
+
+////
+Verwenden Sie diesen http://edufs.edu.htl-leonding.ac.at/~t.stuetz/download/nvs/scripts/download-derbydb-and-jdk.sh[Link], um das Script `download-derbydb-and-jdk.sh` downzuladen. Beim Ausführen werden alle notwendigen Dateien in das aktuelle Verzeichnis geladen:
+
+----
+chmod +x ./download-derbydb-and-jdk.sh
+./download-derbydb-and-jdk.sh java
+----
+////
+////
+.Starten Sie folgende Scripts
+|===
+|Script |starten mit
+
+|`create-db.sh`
+|`./create-db.sh`
+
+|`start-derby.sh`
+|`./start-derby.sh`
+
+|===
+
+.Ergebnis, nach Durchführen der Scripts
+image::db-folder.png[]
+////
+
+=== Demodaten
+
+* Folgende Demodaten im SQL-Format sind beim Start der Applikation automatisch in der Db zu persistieren:
+** für Cars wird folgender Datensatz direkt in die Db-Tabelle `RES_CAR` eingefügt:
++
+[source,sql]
+----
+insert into res_car (C_NAME, C_LITER_PER_100_KM,C_YYYY,C_ORIGIN)
+    values ('Opel Kadett  C', 9, 1974,'Europe');
+----
+
+** für Booking ist eine `startup()`-Methode (Klasse `InitBean`) aufzurufen, die nach dem Start der Quarkus Applikation automatisch ausgeführt wird und nachfolgende Daten in Java einfügt.
++
+[source,java]
+----
+// ...
+Car car = new Car("Opel Kapitän",13,1959,"Europe");
+
+Booking booking = new Booking(
+        "Susi",
+        LocalDate.of(2024, Month.SEPTEMBER, 10),
+        LocalDate.of(2024, Month.SEPTEMBER, 14),
+        car
+);
+// ...
+----
+
+
+
+
+
+=== Rest-Endpoints
+
+. Erstellen Sie entsprechende Rest-Endpoints
++
+[%autowidth]
+|===
+|Method |Path | Beschreibung
+
+|`GET`
+|`/api/car`
+a|Sämtliche Fahrzeuge werden ausgegeben
+
+[source,json]
+----
+[
+  ...
+  {
+    "id": 2,
+    "name": "Opel Kapitän",
+    "literPer100Km": 13.0,
+    "yyyy": 1959,
+    "origin": "Europe"
+  },
+  ...
+]
+----
+
+|`POST`
+|`/api/car/imperial`
+a|
+
+Hier werden Fahrzeuge mit imperialen Maßen (keine metrischen Maße) im json-format importiert (ein Json file `cars.json` steht Ihnen im Verzeichnis `json` zur Verfügung).
+
+[source,json]
+----
+[
+   {
+      "Name":"chevrolet chevelle malibu",
+      "Miles_per_Gallon":18,
+      "Cylinders":8,
+      "Displacement":307,
+      "Horsepower":130,
+      "Weight_in_lbs":3504,
+      "Acceleration":12,
+      "Year":"1970-01-01",
+      "Origin":"USA"
+   },
+    ...
+]
+----
+
+TIP: Erstellen sie ein Dto `CarImperialDto`.
+
+|`GET`
+|`/api/booking`
+a|Sämtliche Buchungen werden ausgegeben.
+
+[source,json]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+content-length: 159
+
+[
+  {
+    "id": 1,
+    "customerName": "Susi",
+    "from": "2024-09-10",
+    "to": "2024-09-14",
+    "car": {
+      "id": 2,
+      "name": "Opel Kapitän",
+      "literPer100Km": 13.0,
+      "yyyy": 1959,
+      "origin": "Europe"
+    }
+  }
+]
+----
+
+|===
+
+. Für das Ausprobieren der Rest-Endpoints steht ihnen im Ordner `http-requests` ein File `requests.http` zur Verfügung.
+
+. Erstellen Sie weiters mindestens zwei Requests, um die Fahrzeuge nach gewissen Kriterien zu filtern. Die Requests sollen ebenfalls im File `requests.http` abgelegt werden.
+.. Verwenden Sie bei einem Request Query-Parameter
+.. Verwenden Sie bei einem Request Path-Parameter
+
+
+. Erstellen Sie mindestens einen entsprechenden Request in `requests.http`, um jeden von ihnen erstellten REST-Endpoint (zB mit CRUD-Funktionalität) zu testen.
+
+
+
+
+
+=== Errechnen der imperialen Maße
+
+Für den Import der cars.json - Files müssen sie die imperialen Daten in metrische Daten umrechnen. Nachfolgend ist ein exemplarischer Rechenweg dargestellt:
+
+image::mpg-converter-example.png[]
+
+Weiters steht ihnen lokal eine Webseite zur Verfügung, die die Umrechnung von imperialen Maße in metrische Maße erläutern:
+
+* link:websites/mpgtoliterconverter.html[MPG to l/100km Converter^]
+
+mpg ... miles per gallon
+
+
+
+
+Sie können auch folgendes Code-snippet verwenden:
+
+[source,java]
+----
+public static final double MILES_TO_KM_CONVERSION_FACTOR = 1.609344;
+public static final double GALLON_TO_LITER_CONVERSION_FACTOR = 3.78541178;
+----
+
+=== Folder-Struktur
+
+image::folder-structure.png[]
+
+== Sources
+
+
+* https://www.mpgtolitres.com/
+
+
+
+Nicht vergessen - beim Programmieren kleine Schritte machen (*das Programm soll immer lauffähig sein*)
+
+image:small-steps.jpg[width=300]
+
+----
+ __   ___     _   ___      __     _      _
+ \ \ / (_)___| | | __|_ _ / _|___| |__ _| |
+  \ V /| / -_) | | _|| '_|  _/ _ \ / _` |_|
+   \_/ |_\___|_| |___|_| |_| \___/_\__, (_)
+                                   |___/
+----

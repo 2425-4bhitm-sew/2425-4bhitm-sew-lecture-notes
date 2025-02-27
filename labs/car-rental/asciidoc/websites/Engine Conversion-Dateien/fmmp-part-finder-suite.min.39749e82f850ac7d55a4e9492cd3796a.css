@@ -1,0 +1,1565 @@
+.typeahead-match {
+    text-decoration: underline;
+}
+.part-finder-console .filter-selector {
+  padding: 10px 0;
+}
+.part-finder-console .filter-selector h4 i {
+  float: right;
+}
+.part-finder-console .filter-selector h4.expanded .fa-plus:before {
+  content: "\f068";
+}
+
+.fmmp-part-finder {
+  background-color: white;
+  margin: 10px 0;
+}
+.fmmp-part-finder input[type="text"],
+.fmmp-part-finder select {
+  width: 100%;
+}
+.fmmp-part-finder label {
+  display: block;
+}
+.fmmp-part-finder ul,
+.fmmp-part-finder ol,
+.fmmp-part-finder li {
+  list-style: none;
+}
+.fmmp-part-finder ul:before,
+.fmmp-part-finder ol:before,
+.fmmp-part-finder li:before {
+  content: "";
+}
+.fmmp-part-finder .select-box {
+  pointer-events: none;
+}
+.fmmp-part-finder .part-finder-vin-search .third-party-msg,
+.fmmp-part-finder .part-finder-plate-search .third-party-msg,
+.fmmp-part-finder .part-license-search-form .third-party-msg {
+  text-align: center;
+}
+.fmmp-part-finder .tab {
+  margin-bottom: 15px;
+  padding-top: 20px;
+}
+.fmmp-part-finder .tab .type-selector {
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: space-between;
+  -moz-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.fmmp-part-finder .tab .type-selector .h5-rep {
+  -moz-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  -webkit-flex: 1 0 auto;
+  flex: 1 0 auto;
+  margin-right: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  word-break: break-word;
+  word-wrap: break-word;
+  margin-bottom: 0;
+}
+.fmmp-part-finder .tab .type-selector .tab-links {
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.fmmp-part-finder .tab .type-selector .tab-links li {
+  cursor: pointer;
+  padding: 9px 10px;
+  margin: 0px 5px;
+  float: left;
+  text-transform: uppercase;
+}
+.fmmp-part-finder .part-finder-category-header,
+.fmmp-part-finder .part-finder-category-subheading {
+  text-align: center;
+}
+.fmmp-part-finder .part-finder-category-header.h2-rep {
+  margin-bottom: 20px;
+}
+.fmmp-part-finder .search-row {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: flex-start;
+  -moz-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: space-around;
+  -moz-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.fmmp-part-finder .search-row .search-group {
+  display: inline-block;
+  position: relative;
+}
+.fmmp-part-finder .search-row .search-group span.button-main {
+  display: block;
+  margin-top: 21px;
+}
+.fmmp-part-finder .search-row .search-group p {
+  margin-bottom: 0;
+}
+.fmmp-part-finder .search-row .search-group.search-button {
+  text-align: center;
+}
+.fmmp-part-finder .search-row .search-group.search-button button {
+  width: 100%;
+}
+.fmmp-part-finder .search-row.search-row-vehicle-cat .search-group {
+  -moz-flex: 0 1 50%;
+  -ms-flex: 0 1 50%;
+  -webkit-flex: 0 1 50%;
+  flex: 0 1 50%;
+  -ms-flex-preferred-size: 45%;
+}
+.fmmp-part-finder .search-row.hide-vehicle-category-selector {
+  display: none;
+}
+.fmmp-part-finder .tab-content {
+  padding: 20px 10px;
+}
+.fmmp-part-finder .part-finder-vehicle-section {
+  text-align: center;
+}
+.fmmp-part-finder .part-finder-vehicle-section .h3-rep {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.fmmp-part-finder .part-finder-vehicle-section .part-finder-by-vehicle-carousel {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 15px 0;
+}
+.fmmp-part-finder .part-finder-vehicle-section .part-finder-by-vehicle-carousel .slick-list {
+  margin: 0 auto;
+  max-width: 90%;
+}
+.fmmp-part-finder .part-finder-vehicle-section .part-finder-by-vehicle-carousel .slick-list .slick-track {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.fmmp-part-finder .part-finder-vehicle-section .part-finder-by-vehicle-carousel.slide-one .slick-list {
+  cursor: default;
+}
+.fmmp-part-finder .part-finder-vehicle-section .part-finder-vehicle-content {
+  margin: 0 auto;
+  padding: 20px 15px;
+  width: 88%;
+}
+.fmmp-part-finder .part-finder-vehicle-section .part-finder-vehicle-content .part-finder-vehicle-content-img {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.fmmp-part-finder .part-finder-vehicle-section .part-finder-vehicle-content .part-finder-vehicle-content-img img {
+  max-width: 128px;
+  max-height: 88px;
+}
+.fmmp-part-finder .part-finder-vehicle-section .part-finder-vehicle-content .part-finder-vehicle-content-wordage {
+  text-align: left;
+  padding-left: 10px;
+}
+.fmmp-part-finder .part-finder-vehicle-section .part-finder-vehicle-content .part-finder-vehicle-content-wordage p {
+  margin-bottom: 0;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.fmmp-part-finder .part-finder-vehicle-section .slick-arrow {
+  height: 45px;
+}
+.fmmp-part-finder .part-finder-vehicle-section .slick-prev {
+  left: 10px;
+}
+.fmmp-part-finder .part-finder-vehicle-section .slick-prev:before {
+  content: '\f104';
+}
+.fmmp-part-finder .part-finder-vehicle-section .slick-next {
+  right: 10px;
+}
+.fmmp-part-finder .part-finder-vehicle-section .slick-next:before {
+  content: '\f105';
+}
+.fmmp-part-finder .part-engine-modal-container {
+  background-color: #FFF;
+  margin: 0 auto;
+  padding: 20px;
+  z-index: 1015;
+}
+.fmmp-part-finder .part-engine-modal-container input:not([type="checkbox"]) {
+  width: 100%;
+}
+.fmmp-part-finder .part-engine-modal-container .spec-row {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -moz-align-content: flex-start;
+  -ms-align-content: flex-start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+  -webkit-box-pack: space-between;
+  -moz-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.fmmp-part-finder .part-engine-modal-container .spec-row .spec-group {
+  margin: 10px 0;
+  position: relative;
+}
+.fmmp-part-finder .part-engine-modal-container .spec-row .spec-group button {
+  width: 100%;
+  margin-left: 0;
+}
+.fmmp-part-finder .part-engine-modal-container.modal-container {
+  background-color: #FFF;
+  width: 786px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%, -75%);
+  -moz-transform: translate(-50%, -75%);
+  -ms-transform: translate(-50%, -75%);
+  -o-transform: translate(-50%, -75%);
+  transform: translate(-50%, -75%);
+}
+.fmmp-part-finder .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1015;
+}
+.fmmp-part-finder .modal-close {
+  float: right;
+}
+.fmmp-part-finder .part-finder-selected-state {
+  padding: 0;
+  margin-left: 0;
+}
+.fmmp-part-finder .part-finder-selected-state li.selector {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+}
+.fmmp-part-finder .part-finder-selected-state li.selector.active {
+  border-width: 0px 0 1px 0;
+}
+.fmmp-part-finder .part-finder-selected-state li.selector.active h6 {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin-bottom: 15px;
+}
+.fmmp-part-finder .part-finder-selected-state li.selector.active h6:after {
+  content: "\f068";
+  font-family: 'fontawesome';
+}
+.fmmp-part-finder .part-finder-selected-state li.selector.active .part-finder-selected-search-form .search-row.search-row-vehicle-cat {
+  display: none;
+}
+.fmmp-part-finder .part-finder-selected-state li.selector.active .search-row.search-row-heading {
+  -webkit-box-pack: flex-start;
+  -moz-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+.fmmp-part-finder .part-finder-selected-state li.selector.active .search-row.search-row-heading .search-group {
+  max-width: 30%;
+  margin: 0;
+}
+.fmmp-part-finder .part-finder-selected-state li.selector.active .search-row.search-row-heading .search-group h5 {
+  margin: 0 0 0 15px;
+}
+.fmmp-part-finder .part-finder-selected-state li.selector h6 {
+  cursor: pointer;
+  padding: 5px 8px;
+}
+.fmmp-part-finder .part-finder-selected-state li.selector h6:after {
+  content: "\f067";
+  font-family: 'fontawesome';
+  font-size: 12px;
+  float: right;
+}
+.fmmp-part-finder .part-finder-selected-state li.selector:last-child {
+  border-bottom: none;
+}
+.fmmp-part-finder .part-finder-selected-state .part-finder-selected-vehicle .search-row {
+  -webkit-box-align: flex-start;
+  -moz-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+.fmmp-part-finder .part-finder-selected-state .part-finder-selected-vehicle .search-row .search-group .part-finder-vehicle-content-img {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.fmmp-part-finder .part-finder-selected-state .part-finder-selected-vehicle .search-row .search-group .part-finder-vehicle-content-img img {
+  max-width: 150px;
+  max-height: 100px;
+}
+.fmmp-part-finder .part-finder-selected-state .part-finder-selected-vehicle .search-row .search-group h5 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.fmmp-part-finder .part-finder-selected-state.tab {
+  margin-bottom: 0;
+}
+.fmmp-part-finder .part-finder-selected-state .tab-content {
+  padding: 0 10px;
+}
+.fmmp-part-finder.aem-GridColumn--default--6 .tab .type-selector {
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.fmmp-part-finder.aem-GridColumn--default--6 .tab .type-selector .h5-rep {
+  text-align: left;
+}
+.fmmp-part-finder.aem-GridColumn--default--6 .tab .type-selector .tab-links {
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.fmmp-part-finder .part-finder-container {
+  border: 1px solid;
+}
+.fmmp-part-finder .part-finder-container.no-border {
+  border: none;
+}
+.ui-autocomplete {
+  max-height: 300px !important;
+  overflow-x: scroll;
+}
+.ui-autocomplete li:before {
+  content: "";
+}
+.ui-widget-content .ui-state-focus {
+  border: none;
+  transition: none;
+}
+.ui-menu .ui-menu-item a.ui-state-focus {
+  margin: 0;
+}
+@media all and (min-width: 1025px) {
+  .fmmp-part-finder .mobile-type-selector {
+    display: none;
+  }
+  .fmmp-part-finder .part-finder-vehicle-section .part-finder-vehicle-content {
+    padding: 20px 12px;
+  }
+  .fmmp-part-finder .part-engine-search-form {
+    padding-bottom: 20px;
+  }
+  .fmmp-part-finder .part-engine-search-form .search-row {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .fmmp-part-finder .part-engine-search-form .search-row .search-group {
+    -moz-flex: 0 1 20%;
+    -ms-flex: 0 1 20%;
+    -webkit-flex: 0 1 20%;
+    flex: 0 1 20%;
+    margin-right: 30px;
+  }
+  .fmmp-part-finder .part-engine-search-form .search-row .search-group.search-button .button-main {
+    margin-top: 22px;
+  }
+  .fmmp-part-finder .part-finder-vin-single-fitment .part-finder-plate-single-fitment,
+  .fmmp-part-finder .part-license-search-form,
+  .fmmp-part-finder .part-number-search-form {
+    padding-bottom: 20px;
+  }
+  .fmmp-part-finder .part-finder-vin-single-fitment .part-finder-plate-single-fitment .search-row,
+  .fmmp-part-finder .part-license-search-form .search-row,
+  .fmmp-part-finder .part-number-search-form .search-row {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .fmmp-part-finder .part-finder-vin-single-fitment .part-finder-plate-single-fitment .search-row .search-group,
+  .fmmp-part-finder .part-license-search-form .search-row .search-group,
+  .fmmp-part-finder .part-number-search-form .search-row .search-group {
+    -moz-flex: 0 1 25%;
+    -ms-flex: 0 1 25%;
+    -webkit-flex: 0 1 25%;
+    flex: 0 1 25%;
+  }
+  .fmmp-part-finder .part-finder-vin-single-fitment .part-finder-plate-single-fitment .search-row .search-group.search-button,
+  .fmmp-part-finder .part-license-search-form .search-row .search-group.search-button,
+  .fmmp-part-finder .part-number-search-form .search-row .search-group.search-button {
+    margin-left: 30px;
+    text-align: left;
+  }
+  .fmmp-part-finder .part-finder-vin-single-fitment .part-finder-plate-single-fitment .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder .part-license-search-form .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder .part-number-search-form .search-row .search-group.search-button .button-main {
+    margin-top: 22px;
+    width: auto;
+  }
+  .fmmp-part-finder .vehicle-type-search {
+    padding-bottom: 20px;
+  }
+  .fmmp-part-finder .vehicle-type-search .search-row {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .fmmp-part-finder .vehicle-type-search .search-row.search-row-vehicle-filters {
+    -webkit-box-pack: space-around;
+    -moz-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  }
+  .fmmp-part-finder .vehicle-type-search .search-row.search-row-vehicle-filters .search-group {
+    -moz-flex: 0 1 18%;
+    -ms-flex: 0 1 18%;
+    -webkit-flex: 0 1 18%;
+    flex: 0 1 18%;
+    -ms-flex-preferred-size: 15%;
+    margin: 0 10px \9;
+  }
+  .fmmp-part-finder .vehicle-type-search .search-row.search-row-vehicle-filters .search-group.search-button .button-main {
+    margin-top: 22px;
+  }
+  .fmmp-part-finder .vehicle-type-search .search-row.search-row-vehicle-cat {
+    margin-bottom: 20px;
+  }
+  .fmmp-part-finder .part-finder-vin-search,
+  .fmmp-part-finder .part-finder-plate-search {
+    padding-bottom: 20px;
+  }
+  .fmmp-part-finder .part-finder-vin-search .search-row,
+  .fmmp-part-finder .part-finder-plate-search .search-row {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .fmmp-part-finder .part-finder-vin-search .search-row .search-group,
+  .fmmp-part-finder .part-finder-plate-search .search-row .search-group {
+    -moz-flex: 0 1 18%;
+    -ms-flex: 0 1 18%;
+    -webkit-flex: 0 1 18%;
+    flex: 0 1 18%;
+    margin-right: 15px;
+  }
+  .fmmp-part-finder .part-finder-vin-search .search-row .search-group.search-button,
+  .fmmp-part-finder .part-finder-plate-search .search-row .search-group.search-button {
+    text-align: left;
+  }
+  .fmmp-part-finder .part-finder-vin-search .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder .part-finder-plate-search .search-row .search-group.search-button .button-main {
+    margin-top: 22px;
+  }
+  .fmmp-part-finder .part-engine-modal-container .spec-row .spec-group {
+    width: 30%;
+    margin: 5px 10px;
+    max-width: 30%;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-engine-search-form {
+    padding-top: 10%;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-engine-search-form .search-row {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-engine-search-form .search-row .search-group {
+    -moz-flex: 0 1 45%;
+    -ms-flex: 0 1 45%;
+    -webkit-flex: 0 1 45%;
+    flex: 0 1 45%;
+    margin: 10px;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-engine-search-form .search-row .search-group.search-button {
+    -moz-flex: 0 1 45%;
+    -ms-flex: 0 1 45%;
+    -webkit-flex: 0 1 45%;
+    flex: 0 1 45%;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-engine-search-form .search-row .search-group.search-button .button-main {
+    margin-top: 22px;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-single-fitment,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-single-fitment,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-license-search-form,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-number-search-form {
+    padding-top: 10%;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-single-fitment .search-row,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-single-fitment .search-row,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-license-search-form .search-row,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-number-search-form .search-row {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-single-fitment .search-row .search-group,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-single-fitment .search-row .search-group,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-license-search-form .search-row .search-group,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-number-search-form .search-row .search-group {
+    -moz-flex: 0 1 55%;
+    -ms-flex: 0 1 55%;
+    -webkit-flex: 0 1 55%;
+    flex: 0 1 55%;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-single-fitment .search-row .search-group.search-button,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-single-fitment .search-row .search-group.search-button,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-license-search-form .search-row .search-group.search-button,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-number-search-form .search-row .search-group.search-button {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-single-fitment .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-single-fitment .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-license-search-form .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-number-search-form .search-row .search-group.search-button .button-main {
+    margin-top: 22px;
+    width: 100%;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .vehicle-type-search {
+    padding-bottom: 20px;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .vehicle-type-search .search-row {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .vehicle-type-search .search-row.search-row-vehicle-filters {
+    -webkit-box-pack: space-around;
+    -moz-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .vehicle-type-search .search-row.search-row-vehicle-filters .search-group {
+    -moz-flex: 0 1 45%;
+    -ms-flex: 0 1 45%;
+    -webkit-flex: 0 1 45%;
+    flex: 0 1 45%;
+    margin: 10px 0;
+    margin: 10px \9;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .vehicle-type-search .search-row.search-row-vehicle-filters .search-group.search-button .button-main {
+    margin-top: 22px;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .vehicle-type-search .search-row.search-row-vehicle-cat {
+    margin-bottom: 10px;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .vehicle-type-search .search-row.search-row-vehicle-cat .search-group {
+    -moz-flex: 0 1 95%;
+    -ms-flex: 0 1 95%;
+    -webkit-flex: 0 1 95%;
+    flex: 0 1 95%;
+    -ms-flex-preferred-size: 93% \9;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .vehicle-type-search .part-finder-heavy-vehicle .part-number-search-form {
+    padding-top: 5%;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .vehicle-type-search .part-finder-heavy-vehicle .part-number-search-form .search-row.search-row-vehicle-filters .search-group {
+    -moz-flex: 0 1 55%;
+    -ms-flex: 0 1 55%;
+    -webkit-flex: 0 1 55%;
+    flex: 0 1 55%;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-search,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-search {
+    padding-top: 10%;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-search .search-row,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-search .search-row {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-search .search-row .search-group,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-search .search-row .search-group {
+    -moz-flex: 0 1 45%;
+    -ms-flex: 0 1 45%;
+    -webkit-flex: 0 1 45%;
+    flex: 0 1 45%;
+    margin: 10px;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-search .search-row .search-group.search-button,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-search .search-row .search-group.search-button {
+    text-align: center;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-search .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-search .search-row .search-group.search-button .button-main {
+    margin-top: 22px;
+  }
+  .page-template-freeform-catalog .fmmp-part-finder {
+    margin: 10px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .fmmp-part-finder {
+    margin: 20px 0;
+    padding: 0px 0;
+  }
+  .fmmp-part-finder .part-finder-container {
+    padding: 20px 15px;
+    border: none;
+  }
+  .fmmp-part-finder input[type="text"],
+  .fmmp-part-finder select {
+    width: 100%;
+    max-width: none;
+    text-align: left;
+  }
+  .fmmp-part-finder .mobile-type-selector {
+    display: none;
+  }
+  .fmmp-part-finder .tab .type-selector > * {
+    -moz-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .fmmp-part-finder .tab .type-selector .h5-rep {
+    margin-bottom: 10px;
+    margin-right: 0;
+    text-align: center;
+  }
+  .fmmp-part-finder ul.tab-links > li {
+    margin: 5px 0;
+  }
+  .fmmp-part-finder .tab-content {
+    padding: 0;
+  }
+  .fmmp-part-finder .tab-content .search-row .search-group {
+    margin: 10px 0;
+  }
+  .fmmp-part-finder .tab-content .search-row .search-group .button-main {
+    margin: 17px 0 20px 0;
+    width: 100%;
+  }
+  .fmmp-part-finder .part-finder-vehicle-section .part-finder-vehicle-content .part-finder-vehicle-content-img img {
+    max-width: 82px;
+    max-height: 56px;
+  }
+  .fmmp-part-finder .part-finder-vehicle-section .part-finder-vehicle-content .part-finder-vehicle-content-wordage p {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .fmmp-part-finder .part-engine-search-form {
+    padding-bottom: 20px;
+  }
+  .fmmp-part-finder .part-engine-search-form .search-row {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .fmmp-part-finder .part-engine-search-form .search-row .search-group {
+    -moz-flex: 0 1 45%;
+    -ms-flex: 0 1 45%;
+    -webkit-flex: 0 1 45%;
+    flex: 0 1 45%;
+    margin: 10px 15px;
+  }
+  .fmmp-part-finder .part-engine-search-form .search-row .search-group.search-button .button-main {
+    margin-top: 22px;
+  }
+  .fmmp-part-finder .part-finder-vin-single-fitment,
+  .fmmp-part-finder .part-finder-plate-single-fitment,
+  .fmmp-part-finder .part-license-search-form,
+  .fmmp-part-finder .part-number-search-form {
+    padding-bottom: 20px;
+  }
+  .fmmp-part-finder .part-finder-vin-single-fitment .search-row,
+  .fmmp-part-finder .part-finder-plate-single-fitment .search-row,
+  .fmmp-part-finder .part-license-search-form .search-row,
+  .fmmp-part-finder .part-number-search-form .search-row {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .fmmp-part-finder .part-finder-vin-single-fitment .search-row .search-group,
+  .fmmp-part-finder .part-finder-plate-single-fitment .search-row .search-group,
+  .fmmp-part-finder .part-license-search-form .search-row .search-group,
+  .fmmp-part-finder .part-number-search-form .search-row .search-group {
+    -moz-flex: 0 1 50%;
+    -ms-flex: 0 1 50%;
+    -webkit-flex: 0 1 50%;
+    flex: 0 1 50%;
+    margin: 10px 10px;
+  }
+  .fmmp-part-finder .part-finder-vin-single-fitment .search-row .search-group.search-button,
+  .fmmp-part-finder .part-finder-plate-single-fitment .search-row .search-group.search-button,
+  .fmmp-part-finder .part-license-search-form .search-row .search-group.search-button,
+  .fmmp-part-finder .part-number-search-form .search-row .search-group.search-button {
+    margin-left: 0px;
+    margin-right: 0;
+    text-align: center;
+  }
+  .fmmp-part-finder .part-finder-vin-single-fitment .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder .part-finder-plate-single-fitment .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder .part-license-search-form .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder .part-number-search-form .search-row .search-group.search-button .button-main {
+    margin-top: 22px;
+    width: 100%;
+  }
+  .fmmp-part-finder .vehicle-type-search {
+    padding-bottom: 0px;
+  }
+  .fmmp-part-finder .vehicle-type-search .search-row {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .fmmp-part-finder .vehicle-type-search .search-row.search-row-vehicle-filters {
+    -webkit-box-pack: space-around;
+    -moz-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  }
+  .fmmp-part-finder .vehicle-type-search .search-row.search-row-vehicle-filters .search-group {
+    -moz-flex: 0 1 45%;
+    -ms-flex: 0 1 45%;
+    -webkit-flex: 0 1 45%;
+    flex: 0 1 45%;
+    margin: 10px \9;
+  }
+  .fmmp-part-finder .vehicle-type-search .search-row.search-row-vehicle-filters .search-group.search-button .button-main {
+    margin-top: 22px;
+  }
+  .fmmp-part-finder .vehicle-type-search .search-row.search-row-vehicle-cat {
+    margin-bottom: 10px;
+  }
+  .fmmp-part-finder .vehicle-type-search .search-row.search-row-vehicle-cat .search-group {
+    -moz-flex: 0 1 50%;
+    -ms-flex: 0 1 50%;
+    -webkit-flex: 0 1 50%;
+    flex: 0 1 50%;
+  }
+  .fmmp-part-finder .part-finder-vin-search,
+  .fmmp-part-finder .part-finder-plate-search {
+    padding-bottom: 20px;
+  }
+  .fmmp-part-finder .part-finder-vin-search .search-row,
+  .fmmp-part-finder .part-finder-plate-search .search-row {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .fmmp-part-finder .part-finder-vin-search .search-row .search-group,
+  .fmmp-part-finder .part-finder-plate-search .search-row .search-group {
+    -moz-flex: 0 1 45%;
+    -ms-flex: 0 1 45%;
+    -webkit-flex: 0 1 45%;
+    flex: 0 1 45%;
+    margin: 10px 15px;
+  }
+  .fmmp-part-finder .part-finder-vin-search .search-row .search-group.search-button,
+  .fmmp-part-finder .part-finder-plate-search .search-row .search-group.search-button {
+    text-align: center;
+  }
+  .fmmp-part-finder .part-finder-vin-search .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder .part-finder-plate-search .search-row .search-group.search-button .button-main {
+    margin-top: 23px;
+  }
+  .fmmp-part-finder .part-engine-modal-container .spec-row .spec-group {
+    margin: 5px 0;
+    width: 45%;
+    max-width: 45%;
+  }
+  .fmmp-part-finder .part-engine-modal-container .spec-row .spec-group:last-child {
+    max-width: none;
+    width: 100%;
+    text-align: center;
+  }
+  .fmmp-part-finder .part-engine-modal-container.modal-container {
+    position: fixed;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    left: 0;
+  }
+  .fmmp-part-finder .part-finder-selected-search-form {
+    padding: 0 10px;
+  }
+  .fmmp-part-finder .part-finder-selected-state .tab-content {
+    padding: 0 20px;
+  }
+  .fmmp-part-finder .part-finder-selected-vehicle .search-row .search-group {
+    -moz-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%;
+    text-align: left;
+  }
+  .fmmp-part-finder .part-finder-selected-vehicle .search-row .search-group.search-button {
+    text-align: center;
+  }
+  .fmmp-part-finder .part-finder-selected-vehicle .search-row .search-group.search-group-image {
+    display: none;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 {
+    width: 100% !important;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .mobile-type-selector {
+    display: block;
+    position: relative;
+    margin: 0;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-container {
+    padding: 0;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .tab,
+  .fmmp-part-finder.aem-GridColumn--default--6 .tab-content {
+    display: block;
+    position: relative;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .tab .type-selector,
+  .fmmp-part-finder.aem-GridColumn--default--6 .tab-content .type-selector {
+    margin: 0;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .tab .type-selector > *,
+  .fmmp-part-finder.aem-GridColumn--default--6 .tab-content .type-selector > * {
+    width: 100%;
+    text-align: left;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .tab .search-row .search-group,
+  .fmmp-part-finder.aem-GridColumn--default--6 .tab-content .search-row .search-group {
+    text-align: left;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .tab-links,
+  .fmmp-part-finder.aem-GridColumn--default--6 .tab-content.hide-mobile {
+    display: none;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .search-row {
+    padding: 0;
+    display: block;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .search-row .search-group {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-selected-vehicle .search-row .search-group {
+    width: 100%;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-engine-search-form {
+    padding-bottom: 0;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-engine-search-form .search-row .search-group {
+    -moz-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    -webkit-flex: 0 1 100%;
+    flex: 0 1 100%;
+    margin: 10px 0;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-engine-search-form .search-row .search-group.search-button {
+    -moz-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    -webkit-flex: 0 1 100%;
+    flex: 0 1 100%;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-engine-search-form .search-row .search-group.search-button .button-main {
+    margin-top: 22px;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-single-fitment,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-single-fitment,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-license-search-form,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-number-search-form,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-search,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-search {
+    padding-bottom: 0;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-single-fitment .search-row .search-group,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-single-fitment .search-row .search-group,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-license-search-form .search-row .search-group,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-number-search-form .search-row .search-group,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-search .search-row .search-group,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-search .search-row .search-group {
+    -moz-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    -webkit-flex: 0 1 100%;
+    flex: 0 1 100%;
+    margin: 10px 0;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-single-fitment .search-row .search-group.search-button,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-single-fitment .search-row .search-group.search-button,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-license-search-form .search-row .search-group.search-button,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-number-search-form .search-row .search-group.search-button,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-search .search-row .search-group.search-button,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-search .search-row .search-group.search-button {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-single-fitment .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-single-fitment .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-license-search-form .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-number-search-form .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-vin-search .search-row .search-group.search-button .button-main,
+  .fmmp-part-finder.aem-GridColumn--default--6 .part-finder-plate-search .search-row .search-group.search-button .button-main {
+    margin-top: 22px;
+    width: 100%;
+  }
+  .fmmp-part-finder .your-engine td.fuel_type,
+  .fmmp-part-finder .your-engine th.fuel_type,
+  .fmmp-part-finder .your-engine td.bore,
+  .fmmp-part-finder .your-engine th.bore,
+  .fmmp-part-finder .your-engine td.stroke,
+  .fmmp-part-finder .your-engine th.stroke,
+  .fmmp-part-finder .your-engine td.cylinders,
+  .fmmp-part-finder .your-engine th.cylinders,
+  .fmmp-part-finder .your-engine td.cc,
+  .fmmp-part-finder .your-engine th.cc,
+  .fmmp-part-finder .your-engine td.kw_ps,
+  .fmmp-part-finder .your-engine th.kw_ps,
+  .fmmp-part-finder .your-engine td.aspiration,
+  .fmmp-part-finder .your-engine th.aspiration,
+  .fmmp-part-finder .your-engine td.valves,
+  .fmmp-part-finder .your-engine th.valves {
+    display: none;
+  }
+}
+@media all and (min-width: 768px) {
+  .fmmp-part-finder .mobile-type-selector {
+    display: none;
+  }
+  .fmmp-part-finder .part-finder-vehicle-section .part-finder-by-vehicle-carousel.slide-two .slick-list {
+    cursor: default;
+  }
+}
+@media all and (max-width: 767px) {
+  .fmmp-part-finder .mobile-type-selector {
+    display: block;
+    margin: 0;
+    position: relative;
+  }
+  .fmmp-part-finder .search-row {
+    display: block;
+  }
+  .fmmp-part-finder .search-row .search-group {
+    display: block;
+    width: 100%;
+  }
+  .fmmp-part-finder .tab,
+  .fmmp-part-finder .tab-content {
+    display: block;
+    position: relative;
+  }
+  .fmmp-part-finder .tab .search-row .search-group,
+  .fmmp-part-finder .tab-content .search-row .search-group {
+    width: 100%;
+    max-width: 100%;
+  }
+  .fmmp-part-finder .tab .type-selector,
+  .fmmp-part-finder .tab-content .type-selector {
+    margin: 0;
+  }
+  .fmmp-part-finder .tab .type-selector > *,
+  .fmmp-part-finder .tab-content .type-selector > * {
+    width: 100%;
+  }
+  .fmmp-part-finder .tab .type-selector .h5-rep,
+  .fmmp-part-finder .tab-content .type-selector .h5-rep {
+    text-align: left;
+  }
+  .fmmp-part-finder .tab-content {
+    margin: 0 auto;
+  }
+  .fmmp-part-finder .tab-content button {
+    margin: 17px 0;
+    width: 100%;
+  }
+  .fmmp-part-finder .tab-links,
+  .fmmp-part-finder .tab-content.hide-mobile {
+    display: none;
+  }
+  .fmmp-part-finder .part-finder-selected-state .tab .mobile-type-selector,
+  .fmmp-part-finder .part-finder-selected-state .tab .type-selector {
+    margin: 0 20px;
+  }
+  .fmmp-part-finder .part-finder-vehicle-section {
+    text-align: center;
+  }
+  .fmmp-part-finder .part-finder-vehicle-section .h3-rep {
+    margin-top: 0;
+  }
+  .fmmp-part-finder .part-finder-vehicle-section .part-finder-vehicle-content {
+    padding: 12px;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .fmmp-part-finder .part-finder-vin-single-fitment,
+  .fmmp-part-finder .part-finder-plate-single-fitment,
+  .fmmp-part-finder .part-engine-search-form,
+  .fmmp-part-finder .part-license-search-form,
+  .fmmp-part-finder .part-number-search-form,
+  .fmmp-part-finder .part-finder-vin-search,
+  .fmmp-part-finder .part-finder-plate-search {
+    padding-bottom: 0;
+  }
+  .fmmp-part-finder .part-finder-vin-single-fitment .search-row .search-group,
+  .fmmp-part-finder .part-finder-plate-single-fitment .search-row .search-group,
+  .fmmp-part-finder .part-engine-search-form .search-row .search-group,
+  .fmmp-part-finder .part-license-search-form .search-row .search-group,
+  .fmmp-part-finder .part-number-search-form .search-row .search-group,
+  .fmmp-part-finder .part-finder-vin-search .search-row .search-group,
+  .fmmp-part-finder .part-finder-plate-search .search-row .search-group {
+    margin: 10px 0;
+  }
+  .fmmp-part-finder .part-engine-modal-container h3 {
+    margin-bottom: 30px;
+  }
+  .fmmp-part-finder .part-engine-modal-container p {
+    margin-bottom: 0;
+  }
+  .fmmp-part-finder .part-engine-modal-container .spec-row .spec-group {
+    max-width: none;
+    width: 100%;
+  }
+  .fmmp-part-finder .part-finder-selected-vehicle .search-group {
+    -moz-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%;
+    text-align: left;
+  }
+}
+
+.part-list {
+  margin: 10px 0px 20px;
+}
+.part-list .alert {
+  max-width: 100%;
+}
+.part-list .alert.alert-info {
+  background-color: transparent;
+}
+.part-list .alert.alert-ix {
+  -webkit-box-pack: flex-start;
+  -moz-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+.part-list h2 {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.part-list .dimmed {
+  position: relative;
+}
+.part-list .dimmed:after {
+  content: " ";
+  z-index: 1015;
+  display: block;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.part-list .dimmed .show-spinner {
+  margin-left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(50%, -50%);
+  -moz-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  -o-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+}
+.part-list .dimmed .show-spinner .three-quarters-loader {
+  margin-left: 0;
+}
+.part-list .fmmp-part-list .part-list-row {
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  clear: both;
+  padding: 20px;
+  width: 100%;
+}
+.part-list .fmmp-part-list .part-number-results {
+  margin-bottom: 30px;
+}
+.part-list .fmmp-part-list .part-list-search-results {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -moz-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.part-list .fmmp-part-list .part-list-filter-container {
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  max-width: 270px;
+}
+.part-list .fmmp-part-list .part-list-filter-container .part-list-filters {
+  background-color: white;
+}
+.part-list .fmmp-part-list .part-list-filter-container .part-list-filters li.filter-sub-item {
+  margin-left: 15px;
+}
+.part-list .fmmp-part-list .part-list-filter-container .modal-close,
+.part-list .fmmp-part-list .part-list-filter-container .part-list-apply-filter {
+  display: none;
+}
+.part-list .fmmp-part-list .part-list-results {
+  -moz-flex: 0 1 75%;
+  -ms-flex: 0 1 75%;
+  -webkit-flex: 0 1 75%;
+  flex: 0 1 75%;
+  margin-left: 20px;
+}
+.part-list .fmmp-part-list .part-list-results .part-result {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -moz-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-image {
+  height: auto;
+  text-align: center;
+  width: 150px;
+  min-height: 150px;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-image a {
+  display: block;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info {
+  margin-left: 33px;
+  width: 100%;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info .alert {
+  margin-bottom: 30px;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info a.part-detail-url {
+  cursor: pointer;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info h3 {
+  margin: 0 0 10px;
+  max-width: 60%;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-result-info-part-number {
+  font-size: 20px;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info h6 {
+  display: none;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-detail-buttons a.button {
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-list-result-details {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -moz-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-list-result-details .part-list-tabs-group {
+  -moz-flex: 0 1 60%;
+  -ms-flex: 0 1 60%;
+  -webkit-flex: 0 1 60%;
+  flex: 0 1 60%;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-list-result-details .part-list-tabs-group .tab-item {
+  cursor: pointer;
+  padding-top: 5px;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-list-result-details .part-list-tabs-group .tab-item.active {
+  padding-top: 4px;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-list-result-details .part-list-result-misc {
+  -moz-flex: 0 1 35%;
+  -ms-flex: 0 1 35%;
+  -webkit-flex: 0 1 35%;
+  flex: 0 1 35%;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-list-result-details .part-list-result-misc .button-main {
+  padding: 17px 40px;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-list-result-details .part-list-result-misc .fits-info {
+  margin-bottom: 30px;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-list-result-details .part-list-result-misc .fits-info .success {
+  display: inline-block;
+  margin-right: 10px;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-list-row > div:not(.part-detail-spec-attribute) {
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-result-attribute {
+  margin-bottom: 5px;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-detail-spec-attribute {
+  display: inline-block;
+}
+.part-list .part-list-header {
+  padding: 20px;
+}
+.part-list .part-list-filter-header {
+  padding: 15px 20px;
+}
+.part-list .part-list-filter-header.collapsed {
+  border-bottom: none;
+}
+.part-list .part-list-filter-header .part-list-filter-expanded-indicator {
+  float: right;
+}
+.part-list .part-list-filter-list {
+  margin-left: 20px;
+}
+.part-list .part-list-filter-list.part-list-brand-filters {
+  margin-left: 5px;
+}
+.part-list .part-list-filter-list input {
+  margin-right: 10px;
+  padding: 0 6px;
+}
+.part-list .part-list-filter-list label {
+  margin: 10px 8px 10px 0;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.part-list .part-list-result-bar {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -moz-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 15px 0;
+}
+.part-list .part-list-result-bar .part-list-result-bar-child {
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.part-list .part-list-result-bar .part-list-result-pagination {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: flex-end;
+  -moz-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.part-list .part-list-result-bar .part-list-result-pagination > div {
+  -moz-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+.part-list .part-list-result-bar .part-list-result-pagination > div.part-list-pages label input {
+  height: 35px;
+  margin: 0 10px;
+  max-width: 20%;
+  padding: 7px 10px;
+  text-align: center;
+  width: auto;
+}
+.part-list .part-list-result-bar .part-list-show-filter {
+  display: none;
+}
+.part-list .part-list-filter-container-mobile {
+  display: none;
+}
+.part-list .part-result-criteria-group {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+@media all and (max-width: 1279px) {
+  .part-list .fmmp-part-list .part-list-results {
+    -moz-flex: 0 1 70%;
+    -ms-flex: 0 1 70%;
+    -webkit-flex: 0 1 70%;
+    flex: 0 1 70%;
+  }
+}
+@media all and (min-width: 1025px) {
+  .page-template-freeform-catalog .part-list {
+    margin: 10px 10px 20px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .part-list {
+    margin: 0;
+    padding: 0;
+  }
+  .part-list h2 {
+    margin-left: 15px;
+  }
+  .part-list .dimmed {
+    z-index: 1050;
+  }
+  .part-list .dimmed .show-spinner {
+    top: 0;
+    -webkit-transform: translate(45%, -50%);
+    -moz-transform: translate(45%, -50%);
+    -ms-transform: translate(45%, -50%);
+    -o-transform: translate(45%, -50%);
+    transform: translate(45%, -50%);
+  }
+  .part-list .fmmp-part-list .part-list-filter-container.show-filters {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: block;
+    max-width: 100%;
+    overflow-x: scroll;
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1005;
+  }
+  .part-list .fmmp-part-list .part-list-filter-container.show-filters .part-list-filter-list input {
+    padding: 0 9px;
+  }
+  .part-list .fmmp-part-list .part-list-filter-container.show-filters .modal-close {
+    display: inline-block;
+    float: right;
+  }
+  .part-list .fmmp-part-list .part-list-filter-container.show-filters .part-list-apply-filter {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .part-list .fmmp-part-list .part-list-filter-container.show-filters .part-list-filters li.filter-sub-item {
+    margin-left: 5px;
+  }
+  .part-list .fmmp-part-list .part-list-filter-list {
+    margin-left: 5px;
+  }
+  .part-list .fmmp-part-list .part-list-ix-results .part-list-result-total {
+    height: 64px;
+  }
+  .part-list .fmmp-part-list .part-list-ix-results .part-list-show-filter {
+    display: none;
+  }
+  .part-list .fmmp-part-list .part-list-results {
+    -moz-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%;
+    margin-left: 0;
+  }
+  .part-list .fmmp-part-list .part-list-results .part-result {
+    border-top: none;
+    display: block;
+    padding: 15px 0;
+  }
+  .part-list .fmmp-part-list .part-list-results .part-result .part-result-image {
+    margin: 0 auto 20px;
+  }
+  .part-list .fmmp-part-list .part-list-results .part-result .part-result-info {
+    margin-left: 0;
+  }
+  .part-list .fmmp-part-list .part-list-results .part-result .part-result-info h3 {
+    max-width: none;
+  }
+  .part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-list-result-details {
+    display: block;
+  }
+  .part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-list-result-details > div {
+    -moz-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    -webkit-flex: 1 0 100%;
+    flex: 1 0 100%;
+    width: 100%;
+  }
+  .part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-list-result-details > div button {
+    width: 100%;
+  }
+  .part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-list-result-details .part-list-tabs-group {
+    margin-bottom: 30px;
+  }
+  .part-list .fmmp-part-list .part-list-results .part-result .part-result-info .part-list-result-details .part-list-tabs-group ul {
+    padding-left: 0;
+  }
+  .part-list .fmmp-part-list .part-number-results {
+    margin-left: 15px;
+  }
+  .part-list .part-list-header {
+    background: none;
+    padding: 20px;
+  }
+  .part-list .part-list-header .fa {
+    display: none;
+  }
+  .part-list .part-list-tab {
+    height: 60px;
+    margin-right: 0;
+    text-align: center;
+    width: 50%;
+  }
+  .part-list .part-list-filter-container.hide-filters {
+    display: none;
+  }
+  .part-list .part-list-result-bar {
+    padding: 5px 0;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .part-list .part-list-result-bar .part-list-show-filter {
+    display: inline-block;
+    padding: 15px;
+  }
+  .part-list .part-list-result-bar .part-list-result-bar-child {
+    -moz-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .part-list .part-list-result-bar .part-list-result-pagination {
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .part-list .part-list-result-bar .part-list-result-pagination .part-list-page-control {
+    max-width: 65%;
+  }
+  .part-list .part-list-result-bar .part-list-result-total {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 10px;
+  }
+}
+
+.schematic-diagram-container .s7basiczoomviewer {
+  height: 450px;
+  max-width: 1620px;
+  margin: 0 auto;
+}
+.schematic-diagram-container .dynamic-media-container {
+  width: 100%;
+  height: auto;
+}
+.schematic-diagram-container .schematic-diagram-inner-container {
+  position: relative;
+}
+.schematic-diagram-container .schematic-diagram-outer-container {
+  margin-bottom: 20px;
+}
+

@@ -782,10 +782,26 @@ image::rest-vs-mqtt.png[]
 * Client-Produkte
 ** MQTT-Explorer
 
-https://www.youtube.com/playlist?list=PLievaKnl8uRQVueMOeBE7KVxNM231hje4
+https://www.youtube.com/playlist?list=PLievaKnl8uRQVueMOeBE7KVxNM231hje4[Playlist für Videos über Quarkus und MQTT^]
+
+++++
+
+++++
 
 
+++++
 
+++++
+
+
+++++
+
+++++
+
+
+++++
+
+++++
 
 
 

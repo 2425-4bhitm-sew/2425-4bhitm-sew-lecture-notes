@@ -1,0 +1,27 @@
+@startuml
+
+!theme plain
+left to right direction
+skinparam linetype polyline
+
+entity RES_BOOKING {
+   B_ID: BIGINT
+   --
+   B_FROM: DATE
+   B_TO: DATE
+   B_C_ID: BIGINT
+   B_CUSTOMER_NAME: VARCHAR(255)
+}
+
+entity RES_CAR {
+   C_ID: BIGINT
+   --
+   C_LITER_PER_100_KM: DOUBLE
+   C_YYYY: NUMBER
+   C_NAME: VARCHAR(255)
+   C_ORIGIN: VARCHAR(255)
+}
+
+RES_CAR "1" <-- "n" RES_BOOKING
+
+@enduml

@@ -1,0 +1,28 @@
+### list all cars
+
+GET http://localhost:8080/api/car
+Content-Type: application/json
+
+### import file cars.json
+
+POST http://localhost:8080/api/car/imperial
+Content-Type: application/json
+
+< ../json/cars.json
+
+### get all bookings
+
+GET http://localhost:8080/api/booking
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/api/car/name-origin?name=ford granada l&origin=USA
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/api/car/USA
+Content-Type: application/json
+
+###

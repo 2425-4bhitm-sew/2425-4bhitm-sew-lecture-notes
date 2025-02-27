@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+fieldset,img,legend{border:0}.full-width,[class*=col-],legend{width:100%}body{background-color:#fff}*{box-sizing:border-box;margin:0;padding:0}html{font-size:16px;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;overflow-y:scroll}body{line-height:1.6em;font-weight:400;color:#333}article,aside,footer,header,header img,header svg,label,main{display:block}a{background-color:transparent;color:#1565c0;text-decoration:none}a:active,a:hover{outline:0;color:#111}pre{overflow:auto;font-family:monospace,monospace;padding:10px;font-size:1em;border:1px solid #eee;background-color:#f8f8f8;margin-bottom:10px}label{margin-bottom:.3em}label.noblock{padding:4px 6px;margin:.2em 0}legend{border-bottom:1px dotted #ccc;font-size:90%;letter-spacing:1px}.button,button,input,select,textarea{font:inherit;padding:.5em;display:inline-block}input,select,textarea{color:inherit;margin:0 5px 5px 0;border:1px solid #ccc;box-shadow:inset 0 1px 3px #ddd;border-radius:4px;font-size:100%;line-height:normal;max-width:100%}select{background-color:#fff;text-transform:none;display:inline-block;font-size:100%;height:2.5em}.button,button{overflow:visible;text-transform:none;letter-spacing:1px;border:0;line-height:normal;white-space:nowrap;color:#fff;background-color:#1565c0;border-radius:4px;font-size:100%;text-align:center}main,td,th{padding:5px}.border,table{border:1px solid #ddd}.button:focus,.button:hover{opacity:.9}button,html input[type=button],input[type=submit]{cursor:pointer}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}textarea{overflow:auto}table{border-collapse:collapse;border-spacing:0;margin-bottom:1em}td,th{text-align:left}.cd-top,.center,.result,footer{text-align:center}th{background-color:#f1f1f1}tr{border-bottom:1px solid #ddd}tr:nth-child(odd){background-color:#f7f7f7}.comments{padding:10px;background-color:#f8f8f8}.comcon{background-color:#fff;overflow:auto;border-radius:4px;padding:10px;margin:5px 0;border:1px solid #ddd}.comaut{font-weight:600}.comcon .date{color:#555;font-size:85%;float:right}.comcon p{border-top:1px dashed #ccc;clear:left}.comments form{margin:15px 0;background-color:#f1f1f1;padding:10px;border:1px solid #ddd;border-radius:4px}#message{background-color:#e3f1d4;padding:10px}h1,h2,h3,h4,h5,h6{font-weight:400;line-height:1.2}h1{font-size:1.6em;margin:.5em 0}h2{font-size:1.5em}h3{font-size:1.4em}h4{font-size:1.3em}h5{font-size:1.2em}h2,h3,h4,h5,h6{margin:1em 0 .2em}p{margin:5px 0 10px}ul{padding-left:20px;list-style-type:square}ul li{line-height:1.7em}.row:after{content:"";clear:both;display:block}[class*=col-]{padding:1px;float:left}header .row,main{max-width:1080px;margin:0 auto}header{z-index:1;background-color:#f5f5f5;margin-bottom:3px}main{min-height:420px;word-wrap:break-word}.bg-gray,.bgrs,.form{background-color:#fafafa}footer{font-size:90%;padding:20px 0}footer ul{padding-left:0}.noblock{display:inline-block}.rounded{border-radius:4px}.margin10{margin:10px 0}.bgrs,.form{padding:5px}.shadow{box-shadow:0 1px 4px 0 rgba(0,0,0,.2)}.margin20{margin:20px 0}.margin10a{display:block;margin:10px auto}time,ul .date{color:#555;font-size:85%;display:block}.social{margin:5px 0}.share-on-twitter{background:#00838f}.share-on-facebook{background:#3B5997}.social a:hover{color:#fff;text-shadow:none}.social .button{font-size:80%;margin-right:4px;text-shadow:0 1px 2px #333}.social .scount{border:1px solid #aaa;margin-right:4px;padding:7px 4px;font-size:85%;background-color:#f5f5f5;color:#555}.list-horizontal,.list-vertical{list-style-type:none}.list-horizontal li{display:inline-block}.list-horizontal li a{padding:2px}.list-vertical li{width:100%;border-bottom:1px dotted #333}.list-vertical li a{display:block;padding:2px 0}.list-horizontal li a:before,.list-vertical li a:before{content:"\00bb";padding-right:5px;color:#bbb}nav .list-vertical{display:inline-block;overflow:auto}.breadcrumb{margin-bottom:5px;min-height:27px;font-size:.875em;color:#555;border-bottom:1px solid #ddd}.breadcrumb div{display:inline-block;margin:2px}.toggle{display:none;width:40px;height:40px;cursor:pointer;left:6px;top:12px;position:absolute}.toggle:after{content:'';display:block;width:27px;height:3px;background:#777;margin:5px;box-shadow:0 8px 0 #777,0 16px 0 #777}.cd-top{overflow:hidden;display:inline-block;height:40px;width:40px;position:fixed;bottom:40px;right:10px;z-index:10;font-size:36px;line-height:55px;color:#fff;background-color:rgba(125,125,125,.5);visibility:hidden;opacity:0;border-radius:4px}.cd-top:hover{opacity:1;color:#eee}.cd-is-visible{visibility:visible;opacity:1}.result{background-color:#fff;margin-bottom:10px;padding:15px 5px;font-size:140%;font-family:verdana,sans-serif}.math{font-family:serif;font-size:120%}@media (min-width:800px){html{font-size:120%}.col-1{width:8.33%}.col-2{width:16.66%}.col-3{width:25%}.col-4{width:33.33%}.col-5{width:41.66%}.col-6{width:50%}.col-7{width:58.33%}.col-8{width:66.66%}.col-9{width:75%}.col-10{width:83.33%}.col-11{width:91.66%}.col-12{width:100%}.col-7-10{width:70%}.col-3-10{width:30%}label{margin:5px 0}.button,.form,button{padding:.5em 1em}main{padding:1px 10px}[class*=col-]{padding:5px}}@media (max-width:799px){header,nav{position:fixed;left:0}html{font-size:110%}header [class*=col-]{padding:5px 0}.m2{width:50%}header{top:0;right:0}main{margin-top:56px;-webkit-transition:-webkit-transform .3s ease-out;transition:transform .3s ease-out}header img,header svg{margin:0 auto}.toggle{display:block;z-index:1;position:fixed}nav.open{-webkit-transform:translate(0,0);transform:translate(0,0)}body.open{overflow:hidden}main.open{transform:translate(215px,0)}nav{width:210px;height:100%;top:60px;bottom:0;background-color:#555;-webkit-transform:translate(-250px,0);transform:translate(-250px,0);-webkit-transition:-webkit-transform .3s ease-out;transition:transform .3s ease-out}nav .list-vertical li a{color:#fff}}@media (max-width:480px){html{font-size:100%}.social{display:block;text-align:center}h1,h2,h3,h4,h5,h6{line-height:1.4;margin:10px 0}h1{font-size:1.4em}h2{font-size:1.3em}h3,h4,h5{font-size:1.2em}td,th{padding:4px 3px}.cd-top{right:5px;bottom:5px}}@media print{.social{display:none}}
+.stickyAd { position: fixed;left:10px; top: 100px;}.stickyAdMobile { position: sticky; bottom: 0; left:0; right:0;}
+@media screen and (max-width: 1000px) {.stickyAd { display: none !important} }
+@media screen and (min-width: 1000px) and (max-width:1330px) {
+    main {
+        margin: 0 0 10px 162px;
+    }
+    header{padding-left: 162px;
+    }
+    header .row{margin: 0 0;
+    }
+}
+    </style>
+<link rel="shortcut icon" type="image/png" href="https://www.mpgtolitres.com/favicon.png">
+<link rel="icon" sizes="192x192" href="https://www.mpgtolitres.com/icon.png">
+<link rel="apple-touch-icon" href="https://www.mpgtolitres.com/apple-touch-icon-152x152.png" sizes="152x152">
+
+    <link rel="preconnect" href="https://www.googletagmanager.com/">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+    <link rel="preconnect" href="https://cdn.adapex.io/">
+    <link rel="dns-prefetch" href="https://cdn.adapex.io/">
+
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="MPG%20to%20l_100km%20Converter%20Miles%20per%20Gallon-Dateien/google-analytics_analytics.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JVVYR7QFR8');
+    </script>
+
+    <script src="MPG%20to%20l_100km%20Converter%20Miles%20per%20Gallon-Dateien/aaw.mtl.js" async=""></script>
+
+<title>MPG to l/100km Converter Miles per Gallon</title>
+<meta name="description" content="Mpg to l/100km converter calculates the fuel economy in litres and converts the fuel consumption units miles per gallon (US) to liters per 100 kilometers.">
+<link rel="canonical" href="https://www.mpgtolitres.com/">
+</head>
+<body>
+<header class="shadow">
+<div class="row"><div class="col-2">
+<a href="https://www.mpgtolitres.com/" title="MPG to l/100km Converter"><img src="MPG%20to%20l_100km%20Converter%20Miles%20per%20Gallon-Dateien/logo.png" srcset="MPG%20to%20l_100km%20Converter%20Miles%20per%20Gallon-Dateien/logo.png 1x, MPG%20to%20l_100km%20Converter%20Miles%20per%20Gallon-Dateien/logo2x.png 2x" loading="lazy" alt="Mpg to Litres logo" width="110" height="40"></a></div>
+<div class="col-10">
+<span class="toggle" id="toggle"></span>
+<nav id="menu">
+<ul id="navmenu" class="list-horizontal">
+<li><a href="https://www.mpgtolitres.com/" title="MPG to l/100km Converter">MPG to l/100km</a></li>
+<li><a href="https://www.mpgtolitres.com/mpg-uk-to-l-100km" title="MPG (UK) to l/100km Converter">MPG (UK) to l/100km</a></li>
+<li><a href="https://www.mpgtolitres.com/mpg-to-kml" title="MPG to Km/l Converter">MPG to Km/l</a></li>
+</ul>
+</nav></div></div>
+</header><main>
+  <div class="margin10 center" style="min-height:120px;">
+    <div data-aaad="true" data-aa-adunit="/22815767462/MTL_970x90v_1"></div>
+</div>
+<h1>MPG to l/100km Converter</h1>
+<p>Convert <strong>miles per gallon to liters per 100 km</strong> (mpg to l/100km). Please enter the <mark>MPG</mark> value to convert to <strong>l/100km</strong>.</p>
+<div class="row">
+<div class="col-7">
+<form onsubmit="return false;" class="form shadow">
+<fieldset>
+<legend>Miles per Gallon (US) to l/100km</legend>
+<label for="mpg">Mpg</label>
+<input type="number" min="1" max="999999" name="mpg" id="mpg" placeholder="MPG" title="miles per gallon (US)" required="">
+<select id="decimalDigits" name="decimalDigits" onchange="convert();">
+<option value="0">No decimal</option>
+<option value="1">1 decimal</option>
+<option value="2" selected="selected">2 decimal</option>
+<option value="3">3 decimal</option>
+<option value="4">4 decimal</option>
+<option value="5">5 decimal</option>
+<option value="6">6 decimal</option>
+</select>
+<button type="submit" class="button" onclick="convert();" title="Convert Mpg to liters per 100 km">Convert</button>
+</fieldset>
+</form>
+<div class="result shadow" id="result">1 mpg = 235.21 l/100km</div>
+    <p>1 mile per gallon is equal to 235.214583 liters per 100 km.</p>
+    <p class="center math bgrs">1 mpg = 235.214583 l/100km</p>
+    <ul>
+        <li>m: miles</li>
+        <li>p: per</li>
+        <li>g: US gallon</li>
+    </ul>
+</div>
+<div class="col-5">
+  <div class="center" style="min-height:300px;">
+    <div data-aaad="true" data-aa-adunit="/22815767462/MTL_300v_1"></div>
+    <div data-aaad="true" data-aa-adunit="/22815767462/MTL_Mob_300x250v_1"></div>
+</div>
+</div>
+</div>
+<div class="social">
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mpgtolitres.com%2F" rel="noopener" target="_blank" class="button share-on-facebook" title="Share on Facebook">Facebook</a>
+<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.mpgtolitres.com%2F" rel="noopener" target="_blank" class="button share-on-twitter" title="Share on Twitter">Twitter</a>
+</div>
+<p>Need to convert reverse fuel consumption units? <a href="https://www.mpgtolitres.com/l-100km-to-mpg" title="l/100km to MPG Converter">Convert l/100km to MPG</a>.</p>
+<h2>What is MPG?</h2>
+<p><strong>MPG</strong> is the abbreviation of <strong>miles per gallon</strong>
+which is the distance traveled in a vehicle with one gallon of gasoline or diesel fuel.
+Mpg value tells us how many miles we can travel with 1 gallon of fuel with a car.
+MPG shows the fuel economy of a car.</p>
+
+<h2>How to Convert Miles per Gallon (US) to l/100km</h2>
+<p>In order to convert mpg to l/100km, we need to first convert gallon (US) to litres,
+and convert miles to kilometers.</p>
+<p>Kilometers miles conversion factor:</p>
+<pre>1 mile = 1.609344 kilometers
+1 mi = 1.609344 km
+</pre>
+<p>US gallon litre conversion factor:</p>
+<pre>1 US gallon = 3.78541178 litres
+1 gal = 3.78541178 l
+</pre>
+<p>Mpg in fuel consumption units:</p>
+<pre>mpg = Miles per Gallon
+mpg = miles / gal
+
+putting kilometers equivalent in mpg equation
+mpg = 1.609344 km / gal
+
+putting litres equivalent in mpg equation
+mpg = 1.609344 km / 3.78541178 l
+
+let's divide 1 by our equation
+because we have miles/gal, but we need to find l/100km
+
+3.78541178 l / 1.609344 km
+2.35214583 l / km
+
+we need to find litres per 100 kilometers,
+so we have multiply and divide by 100 of the right hand side
+
+235.214583 l / 100km
+
+in order to find litres per 100 kilometers
+we need to divide mpg by 235.214583
+
+l/100km = 235.214583 / mpg
+
+</pre>
+
+  <div class="margin10 center" style="min-height:250px;">
+    <div data-aaad="true" data-aa-adunit="/22815767462/MTL_970x250v_1"></div>
+    <div data-aaad="true" data-aa-adunit="/22815767462/MTL_Mob_300x250v_2"></div>
+</div>
+
+<h3>Miles per gallon (US) to l/100km Examples</h3>
+<div class="row">
+<div class="col-6">
+<p>A car with <strong>35 mpg</strong> fuel consumption is 6.72 l/100km.</p>
+<pre>35 mpg
+35 miles per gallon
+
+l/100km = 235.214583 / mpg
+l/100km = 235.214583 / 35
+
+l/100km = 235.214583 / 35
+6.72 l/100km
+</pre>
+</div>
+<div class="col-6">
+<p>A car with <strong>45 mpg</strong> fuel consumption is 5.23 l/100km.</p>
+<pre>45 mpg
+45 miles per gallon
+
+l/100km = 235.214583 / mpg
+l/100km = 235.214583 / 45
+
+l/100km = 235.214583 / 45
+5.23 l/100km
+</pre>
+</div>
+</div>
+<h4>Miles per gallon (US) to l/100km Conversion Table</h4>
+<div class="row">
+<div class="col-4">
+<table>
+<tbody><tr><th>Miles per Gallon (US)</th><th>l/100km</th></tr>
+<tr><td>1 mpg</td><td>235.2 l/100km</td></tr>
+<tr><td>2 mpg</td><td>117.6 l/100km</td></tr>
+<tr><td>3 mpg</td><td>78.4 l/100km</td></tr>
+<tr><td>4 mpg</td><td>58.8 l/100km</td></tr>
+<tr><td>5 mpg</td><td>47 l/100km</td></tr>
+<tr><td>6 mpg</td><td>39.2 l/100km</td></tr>
+<tr><td>7 mpg</td><td>33.6 l/100km</td></tr>
+<tr><td>8 mpg</td><td>29.4 l/100km</td></tr>
+<tr><td>9 mpg</td><td>26.1 l/100km</td></tr>
+<tr><td>10 mpg</td><td>23.5 l/100km</td></tr>
+<tr><td>11 mpg</td><td>21.4 l/100km</td></tr>
+<tr><td>12 mpg</td><td>19.6 l/100km</td></tr>
+<tr><td>13 mpg</td><td>18.1 l/100km</td></tr>
+<tr><td>14 mpg</td><td>16.8 l/100km</td></tr>
+<tr><td>15 mpg</td><td>15.7 l/100km</td></tr>
+<tr><td>16 mpg</td><td>14.7 l/100km</td></tr>
+<tr><td>17 mpg</td><td>13.8 l/100km</td></tr>
+<tr><td>18 mpg</td><td>13.1 l/100km</td></tr>
+<tr><td>19 mpg</td><td>12.4 l/100km</td></tr>
+<tr><td>20 mpg</td><td>11.8 l/100km</td></tr>
+<tr><td>21 mpg</td><td>11.2 l/100km</td></tr>
+<tr><td>22 mpg</td><td>10.7 l/100km</td></tr>
+<tr><td>23 mpg</td><td>10.2 l/100km</td></tr>
+<tr><td>24 mpg</td><td>9.8 l/100km</td></tr>
+<tr><td>25 mpg</td><td>9.4 l/100km</td></tr>
+<tr><td>26 mpg</td><td>9 l/100km</td></tr>
+<tr><td>27 mpg</td><td>8.7 l/100km</td></tr>
+<tr><td>28 mpg</td><td>8.4 l/100km</td></tr>
+<tr><td>29 mpg</td><td>8.1 l/100km</td></tr>
+<tr><td>30 mpg</td><td>7.8 l/100km</td></tr>
+<tr><td>31 mpg</td><td>7.6 l/100km</td></tr>
+<tr><td>32 mpg</td><td>7.4 l/100km</td></tr>
+<tr><td>33 mpg</td><td>7.1 l/100km</td></tr>
+<tr><td>34 mpg</td><td>6.9 l/100km</td></tr>
+<tr><td>35 mpg</td><td>6.7 l/100km</td></tr>
+<tr><td>36 mpg</td><td>6.5 l/100km</td></tr>
+<tr><td>37 mpg</td><td>6.4 l/100km</td></tr>
+<tr><td>38 mpg</td><td>6.2 l/100km</td></tr>
+<tr><td>39 mpg</td><td>6 l/100km</td></tr>
+<tr><td>40 mpg</td><td>5.9 l/100km</td></tr>
+</tbody></table>
+</div>
+<div class="col-4">
+<table>
+<tbody><tr><th>Miles per Gallon (US)</th><th>l/100km</th></tr>
+<tr><td>41 mpg</td><td>5.7 l/100km</td></tr>
+<tr><td>42 mpg</td><td>5.6 l/100km</td></tr>
+<tr><td>43 mpg</td><td>5.5 l/100km</td></tr>
+<tr><td>44 mpg</td><td>5.3 l/100km</td></tr>
+<tr><td>45 mpg</td><td>5.2 l/100km</td></tr>
+<tr><td>46 mpg</td><td>5.1 l/100km</td></tr>
+<tr><td>47 mpg</td><td>5 l/100km</td></tr>
+<tr><td>48 mpg</td><td>4.9 l/100km</td></tr>
+<tr><td>49 mpg</td><td>4.8 l/100km</td></tr>
+<tr><td>50 mpg</td><td>4.7 l/100km</td></tr>
+<tr><td>51 mpg</td><td>4.6 l/100km</td></tr>
+<tr><td>52 mpg</td><td>4.5 l/100km</td></tr>
+<tr><td>53 mpg</td><td>4.4 l/100km</td></tr>
+<tr><td>54 mpg</td><td>4.4 l/100km</td></tr>
+<tr><td>55 mpg</td><td>4.3 l/100km</td></tr>
+<tr><td>56 mpg</td><td>4.2 l/100km</td></tr>
+<tr><td>57 mpg</td><td>4.1 l/100km</td></tr>
+<tr><td>58 mpg</td><td>4.1 l/100km</td></tr>
+<tr><td>59 mpg</td><td>4 l/100km</td></tr>
+<tr><td>60 mpg</td><td>3.9 l/100km</td></tr>
+<tr><td>61 mpg</td><td>3.9 l/100km</td></tr>
+<tr><td>62 mpg</td><td>3.8 l/100km</td></tr>
+<tr><td>63 mpg</td><td>3.7 l/100km</td></tr>
+<tr><td>64 mpg</td><td>3.7 l/100km</td></tr>
+<tr><td>65 mpg</td><td>3.6 l/100km</td></tr>
+<tr><td>66 mpg</td><td>3.6 l/100km</td></tr>
+<tr><td>67 mpg</td><td>3.5 l/100km</td></tr>
+<tr><td>68 mpg</td><td>3.5 l/100km</td></tr>
+<tr><td>69 mpg</td><td>3.4 l/100km</td></tr>
+<tr><td>70 mpg</td><td>3.4 l/100km</td></tr>
+<tr><td>71 mpg</td><td>3.3 l/100km</td></tr>
+<tr><td>72 mpg</td><td>3.3 l/100km</td></tr>
+<tr><td>73 mpg</td><td>3.2 l/100km</td></tr>
+<tr><td>74 mpg</td><td>3.2 l/100km</td></tr>
+<tr><td>75 mpg</td><td>3.1 l/100km</td></tr>
+<tr><td>76 mpg</td><td>3.1 l/100km</td></tr>
+<tr><td>77 mpg</td><td>3.1 l/100km</td></tr>
+<tr><td>78 mpg</td><td>3 l/100km</td></tr>
+<tr><td>79 mpg</td><td>3 l/100km</td></tr>
+<tr><td>80 mpg</td><td>2.9 l/100km</td></tr>
+</tbody></table>
+</div>
+<div class="col-4">
+<table>
+<tbody><tr><th>Miles per Gallon (US)</th><th>l/100km</th></tr>
+<tr><td>81 mpg</td><td>2.9 l/100km</td></tr>
+<tr><td>82 mpg</td><td>2.9 l/100km</td></tr>
+<tr><td>83 mpg</td><td>2.8 l/100km</td></tr>
+<tr><td>84 mpg</td><td>2.8 l/100km</td></tr>
+<tr><td>85 mpg</td><td>2.8 l/100km</td></tr>
+<tr><td>86 mpg</td><td>2.7 l/100km</td></tr>
+<tr><td>87 mpg</td><td>2.7 l/100km</td></tr>
+<tr><td>88 mpg</td><td>2.7 l/100km</td></tr>
+<tr><td>89 mpg</td><td>2.6 l/100km</td></tr>
+<tr><td>90 mpg</td><td>2.6 l/100km</td></tr>
+<tr><td>91 mpg</td><td>2.6 l/100km</td></tr>
+<tr><td>92 mpg</td><td>2.6 l/100km</td></tr>
+<tr><td>93 mpg</td><td>2.5 l/100km</td></tr>
+<tr><td>94 mpg</td><td>2.5 l/100km</td></tr>
+<tr><td>95 mpg</td><td>2.5 l/100km</td></tr>
+<tr><td>96 mpg</td><td>2.5 l/100km</td></tr>
+<tr><td>97 mpg</td><td>2.4 l/100km</td></tr>
+<tr><td>98 mpg</td><td>2.4 l/100km</td></tr>
+<tr><td>99 mpg</td><td>2.4 l/100km</td></tr>
+<tr><td>100 mpg</td><td>2.4 l/100km</td></tr>
+<tr><td>101 mpg</td><td>2.3 l/100km</td></tr>
+<tr><td>102 mpg</td><td>2.3 l/100km</td></tr>
+<tr><td>103 mpg</td><td>2.3 l/100km</td></tr>
+<tr><td>104 mpg</td><td>2.3 l/100km</td></tr>
+<tr><td>105 mpg</td><td>2.2 l/100km</td></tr>
+<tr><td>106 mpg</td><td>2.2 l/100km</td></tr>
+<tr><td>107 mpg</td><td>2.2 l/100km</td></tr>
+<tr><td>108 mpg</td><td>2.2 l/100km</td></tr>
+<tr><td>109 mpg</td><td>2.2 l/100km</td></tr>
+<tr><td>110 mpg</td><td>2.1 l/100km</td></tr>
+<tr><td>111 mpg</td><td>2.1 l/100km</td></tr>
+<tr><td>112 mpg</td><td>2.1 l/100km</td></tr>
+<tr><td>113 mpg</td><td>2.1 l/100km</td></tr>
+<tr><td>114 mpg</td><td>2.1 l/100km</td></tr>
+<tr><td>115 mpg</td><td>2 l/100km</td></tr>
+<tr><td>116 mpg</td><td>2 l/100km</td></tr>
+<tr><td>117 mpg</td><td>2 l/100km</td></tr>
+<tr><td>118 mpg</td><td>2 l/100km</td></tr>
+<tr><td>119 mpg</td><td>2 l/100km</td></tr>
+<tr><td>120 mpg</td><td>2 l/100km</td></tr>
+</tbody></table>
+</div>
+</div>
+<div class="social">
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mpgtolitres.com%2F" rel="noopener" target="_blank" class="button share-on-facebook" title="Share on Facebook">Facebook</a>
+<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.mpgtolitres.com%2F" rel="noopener" target="_blank" class="button share-on-twitter" title="Share on Twitter">Twitter</a>
+</div>
+<h5>Helpful MPG Resources</h5>
+<ul>
+<li><a href="https://www3.epa.gov/fueleconomy/basicinformation.htm" title="Mpg on Epa" rel="noopener" target="_blank">EPA</a> mpg information</li>
+<li><a href="http://www.umich.edu/~umtriswt/EDI_sales-weighted-mpg.html" title="Fuel economy rating" rel="noopener" target="_blank">fuel-economy rating</a> Umich edu</li>
+<li><a href="http://www.afdc.energy.gov/data/" title="MPG Data" rel="noopener" target="_blank">MPG Data</a> Energy Gov</li>
+</ul>
+</main>
+<footer>
+<p>© 2016 - 2024 www.MpgtoLitres.com</p>
+<ul class="list-horizontal">
+    <li><a href="https://www.mpgtolitres.com/privacy" title="Privacy Policy and Cookies">Privacy Policy and Cookies</a></li>
+    <li><a href="https://www.mpgtolitres.com/about-us" title="About Us">About Us</a></li>
+<li><a href="https://www.mpgtolitres.com/contact-us" title="Contact Us">Contact Us</a></li>
+<li><a href="https://www.mpgtolitres.com/sitemap" title="Sitemap">Sitemap</a></li>
+</ul>
+<a href="javascript:void(0)" onclick="gotop();" title="Go to top of page" class="cd-top" id="cd-top">⌃</a>
+</footer>
+<div class="stickyAd" style="left: 2px;">
+    <div data-aaad="true" data-aa-adunit="/22815767462/MTL_160v_Sticky"></div>
+</div>
+<div class="center">
+    <div data-aaad="true" data-aa-adunit="/22815767462/MTL_970v_StickyFooter"></div>
+</div>
+<script>
+!function(e,t){function n(){t.getElementById("navmenu").classList.toggle("list-vertical"),t.getElementsByTagName("header")[0].classList.toggle("open"),t.getElementsByTagName("body")[0].classList.toggle("open")}function s(){o.classList.contains("open")?setTimeout(n,500):n(),o.classList.toggle("open"),t.getElementsByTagName("main")[0].classList.toggle("open")}function i(){o.classList.contains("open")&&s()}var o=t.getElementById("menu"),a="onorientationchange"in e?"orientationchange":"resize";t.getElementById("toggle").addEventListener("click",function(){s()}),e.addEventListener(a,i)}(this,this.document);
+function gotop(){return document.body.scrollTop=document.documentElement.scrollTop=0,!1}window.onscroll=function(){let o=window.scrollY;o>=100?document.getElementById("cd-top").className="cd-top cd-is-visible":document.getElementById("cd-top").className="cd-top"};
+</script>
+<script>
+    function moveAds() {
+        let mainDiv = document.getElementsByTagName("main")[0];
+        let offsetLeft = mainDiv.offsetLeft - 160;
+        if(offsetLeft>0) {
+            document.getElementsByClassName("stickyAd")[0].style.left = offsetLeft + "px";
+        }
+    }
+    window.onresize = moveAds;
+    window.onload = moveAds;
+    window.onscroll = moveAds;
+</script><script>
+function convert(){var e=document.getElementById("mpg").value,t=document.getElementById("decimalDigits").value;if(isNumber(e)){var n=+(235.214583/e).toFixed(t);return document.getElementById("result").innerHTML=e+" mpg = "+n+" l/100km",!1}}function isNumber(e){return!isNaN(parseFloat(e))&&isFinite(e)}document.getElementById("mpg").addEventListener("input",function(){convert()});
+</script>
+
+</body></html>
