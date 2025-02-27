@@ -2067,10 +2067,98 @@ sdg</p>
 <div class="paragraph">
 <p><a href="https://www.youtube.com/playlist?list=PLievaKnl8uRQVueMOeBE7KVxNM231hje4" target="_blank" rel="noopener">Playlist für Videos über Quarkus und MQTT</a></p>
 </div>
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SslVWiX8P2A?si=zHuHnpnRmrp4u_0a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JC35NBqptkI?si=3Io3cI7N0Z4B36TX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vpAPS1yKhOw?si=DPMvRrDooowd2E1y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dTTfygU61_E?si=EzCEpWXtloazOSed" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://youtu.be/2qfZfkJ2ppc?si=XYJglFXhZTGFGJM8
+https://youtu.be/MlsAPMwAm4Y?si=pxyZkUDhds4UZUu6
+<div class="sect3">
+<h4 id="_mqtt_2"><a class="anchor" href="#_mqtt_2"></a>14.2.1. MQTT</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Arbeiten Sie obige Videos durch</p>
+</li>
+<li>
+<p>Erstellen Sie in Ihren Mikroprojekten einen MQTT-Client in Java um auf den im Moodle angegeben MQTT-Server der Schule zugreifen zu können</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Das Topic soll lauten: 4bhitm/nachname/xxx</p>
+</li>
+<li>
+<p>Erstellen Sie einen zeitlich gesteuerten Service, der beliebige (Zufalls-)Werte periodisch an den MQTT-Server sendet</p>
+</li>
+<li>
+<p>Überlegen Sie sich einen Use Case um dynamische Topics zu verwenden</p>
+<div class="ulist">
+<ul>
+<li>
+<p>zB könnte eine eigene Quarkus Applikation einen REST-Service anbieten, bei dem für einen bestimmten Raum die Temperatur abgefragt werden kann.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/uebung-mqtt.png" alt="uebung mqtt">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Erläutern Sie im README.adoc die grunddätzliche Vorgehensweise um Daten vom und zum mqtt-server zu senden.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Achten Sie darauf eine ordentliche Präambel im README.adoc zu verwenden, um die admonitions im gh context mit icons darzustellen.</p>
+</li>
+<li>
+<p>Verwenden Sie bei Ihren Erklärungen Callouts, die direkt auf den Quellcode zugreifen.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">asciidoctor-präambel</div>
+<div class="content">
+<pre>= Übung Lego-Programmier-Bausteine
+Thomas Stütz
+1.0.0, {docdate}
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+// :toc:
+// :toclevels: 1
+:experimental:
+//https://gist.github.com/dcode/0cfbf2699a1fe9b46ff04c41721dda74?permalink_comment_id=3948218</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/thomasnordquist/MQTT-Explorer/releases/tag/v0.3.5">Clientsoftware MQTT-Explorer</a></p>
+</li>
+<li>
+<p>Termin: 6. März 2025</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -2078,7 +2166,7 @@ sdg</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2025-02-27 08:48:24 UTC
+Last updated 2025-02-27 19:57:20 UTC
 </div>
 </div>
 </body>
