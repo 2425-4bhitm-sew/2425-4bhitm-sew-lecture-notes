@@ -859,3 +859,14 @@ endif::[]
 * https://github.com/thomasnordquist/MQTT-Explorer/releases/tag/v0.3.5[Clientsoftware MQTT-Explorer]
 
 * Termin: 6. März 2025
+
+
+== 2025-03-06
+
+image::serverseitig.png[]
+
+
+image::client-seitig.png[]
+
+* Frage:
+** wie ist webpack in Angular integriert?
