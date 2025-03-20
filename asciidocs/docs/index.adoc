@@ -322,6 +322,9 @@ https://medium.com/sahibinden-technology/package-by-layer-vs-package-by-feature-
 
 image::package-by.png[]
 
+=== Was sind Reflections?
+* eine Möglichkeit, Informationen über Klassen, Methoden und andere Sprachelemente zu erhalten, ohne diese Elemente während dem Programmieren zu kennen
+
 === Project Vehicle
 
 == 2024-11-14
