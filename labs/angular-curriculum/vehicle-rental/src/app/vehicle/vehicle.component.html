@@ -1,0 +1,9 @@
+<div>
+  <button (click)="onSelectVehicle()">
+    <img
+      [src]="imagePath()"
+      [alt]="selectedVehicle().brand"
+    />
+    <span>{{ selectedVehicle().brand }}</span>
+  </button>
+</div>
