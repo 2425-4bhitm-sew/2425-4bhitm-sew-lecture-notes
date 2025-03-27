@@ -1,10 +1,36 @@
-<app-header />
+<app-header/>
 
 <main>
   <ul id="vehicles">
     <li>
-      <app-vehicle/>
+      <app-vehicle [id]="vehicles[0].id"
+                   [avatar]="vehicles[0].avatar"
+                   [brand]="vehicles[0].brand"
+                   (select)="onSelectVehicle($event)"
+      />
+    </li>
+    <li>
+      <app-vehicle [id]="vehicles[1].id"
+                   [avatar]="vehicles[1].avatar"
+                   [brand]="vehicles[1].brand"
+                   (select)="onSelectVehicle($event)"
+      />
+    </li>
+    <li>
+      <app-vehicle [id]="vehicles[2].id"
+                   [avatar]="vehicles[2].avatar"
+                   [brand]="vehicles[2].brand"
+                   (select)="onSelectVehicle($event)"
+      />
+    </li>
+    <li>
+      <app-vehicle [id]="vehicles[3].id"
+                   [avatar]="vehicles[3].avatar"
+                   [brand]="vehicles[3].brand"
+                   (select)="onSelectVehicle($event)"
+      />
     </li>
   </ul>
-</main>
 
+  <app-rentals [brand]="selectedVehicle.brand" />
+</main>

@@ -635,7 +635,7 @@ Verwendet man dazu REST, muss der RPi regelmäßig den Server abfragen, ob es ne
 * gRPC
 ** https://quarkus.io/guides/grpc-getting-started
 ** https://quarkus.io/guides/grpc
-** gRPC ist ein Protokoll, das auf HTTP/2 basiert. Es ist schneller als REST und kann auch bidirektional kommunizieren.
+** gRPC ist ein Protokoll, das auf HTTP/2 basiert (HTTP/2 ist ein binäres Protokoll). Es ist schneller als REST und kann auch bidirektional kommunizieren.
 
 
 === Zusammengesetzter Schlüssel
@@ -870,3 +870,18 @@ image::client-seitig.png[]
 
 * Frage:
 ** wie ist webpack in Angular integriert?
+
+== 2025-03-27
+
+* Angular Vehicle beginnend bei 4.8
+
+* bis exkl. 4.16
+
+
+
+
+
+
+
+
+
