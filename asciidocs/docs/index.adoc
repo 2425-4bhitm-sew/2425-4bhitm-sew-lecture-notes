@@ -878,6 +878,18 @@ image::client-seitig.png[]
 * bis exkl. 4.16
 
 
+== 2025-04-03
+
+* Angular Rest-Service
+
+* Übung
+** fertigstellen des REST-Service Projektes
+** Angular Tutorial bis inkl. 4.24
+
+* Quarkus Websocket
+
+
+
 
 
 
